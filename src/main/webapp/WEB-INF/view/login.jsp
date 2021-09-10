@@ -378,15 +378,15 @@
 						
 						<nav class="navbar ">
 							<div class="dropdown right1 md_acc ">
-							  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#" class="font-weight-bolder"> my account&nbsp;<i class="fas fa-angle-down"></i></a>
+							  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="/amazon/#" class="font-weight-bolder"> my account&nbsp;<i class="fas fa-angle-down"></i></a>
 							  </span>
 							  <div class="dropdown-menu r_menu dropdown-menu-right" >
-								    <a class="dropdown-item font-weight-bolder" href="login">log in</a>
-								    <a class="dropdown-item font-weight-bolder" href="registration">register</a>
+								    <a class="dropdown-item font-weight-bolder" href="/amazon/login">log in</a>
+								    <a class="dropdown-item font-weight-bolder" href="/amazon/registration">register</a>
 							  </div>
 							</div>
 						<div class="dropdown right1 md_1 hr_">
-						  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#" class="font-weight-bolder"> USD&nbsp;<i class="fas fa-angle-down"></i></a>
+						  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="/amazon/#" class="font-weight-bolder"> USD&nbsp;<i class="fas fa-angle-down"></i></a>
 						  </span>
 						  <div class="dropdown-menu r_menu dropdown-menu-right" >
 						    <a class="dropdown-item font-weight-bolder" href="#">SAR SAR</a>
@@ -395,7 +395,7 @@
 						</div>
 						
 						<div class="dropdown right1 md_2 hr_">
-						  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#" class="font-weight-bolder">ENG&nbsp;<i class="fas fa-angle-down"></i></a>
+						  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="/amazon/#" class="font-weight-bolder">ENG&nbsp;<i class="fas fa-angle-down"></i></a>
 						  </span>
 						  <div class="dropdown-menu r_menu dropdown-menu-right" >
 						    <a class="dropdown-item font-weight-bolder" href="#">English</a>
@@ -418,7 +418,7 @@
 			<div class="container custom_container header-top-container">
 				<div class="row">
 					<div class="col-xl-2 col-lg-2 col-6  head-logo">
-						<div class="text-left header-top-left pt-2"><a href="index"><img src="assets/img/Hitech..png" class="img-responsive img"  alt="Hitech"></a></div>
+						<div class="text-left header-top-left pt-2"><a href="/amazon/index"><img src="assets/img/Hitech..png" class="img-responsive img"  alt="Hitech"></a></div>
 					</div> <!-- col-xl-2 col-lg-2 col-md-2 col-sm-3 head-logo -->
 					<div class="col-xl-10 col-lg-10 col-6  head-search">
 						<div class="d-flex navbar">
@@ -443,13 +443,13 @@
 						<div class="col-xl-4 col-lg-5 head-right text-right">
 							<ul>
 							<li class="md_compare d-lg-inline-block">
-								<a href="compare">
+								<a href="/amazon/compare">
 								<span class="rcom d-lg-inline-block d-md-none d-sm-none d-none"><svg width="34px" height="34px"><use xlink:href="#compare"></use></svg></span>
 								<span class="comp_wish align-middle d-lg-inline-block font-weight-bolder">compare</span>
 								</a>
 							</li>
 							<li class="md_wish d-lg-inline-block d-md-none d-sm-none d-none">
-								<a href="wishlist">
+								<a href="/amazon/wishlist">
 								<span class="rcom d-lg-inline-block d-md-none d-sm-none d-none"><svg  width="35px" height="35px"><use xlink:href="#favourite"></use></svg></span>
 								<span class="comp_wish align-middle d-lg-inline-block font-weight-bolder">favourite</span>
 								</a>
@@ -457,7 +457,7 @@
 							
 							<li class="d-lg-none d-md-inline-block user">
                                   <span >
-                                    <a href="#"><span><svg width="35px" height="35px"><use xlink:href="#header_user"></use></svg></span></a>
+                                    <a href="/amazon/#"><span><svg width="35px" height="35px"><use xlink:href="#header_user"></use></svg></span></a>
                                   </span>
                                   <div class="head_ border rounded bg-white text-left">
                                     <a class=" md_login" href="#"></a>
@@ -466,7 +466,7 @@
 
 							<li class="dropdown d-inline-block">
 								  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								  	<a href="#">
+								  	<a href="/amazon/#">
 										<span><svg width="35px" height="35px"><use xlink:href="#cart"></use></svg></span>
 										<span class="text-danger d-lg-inline-block d-md-none d-sm-none d-none align-middle font-weight-bolder"></span><span class="text-danger price_cart d-md-inline-block align-middle font-weight-bolder">2</span>
 									</a>
@@ -476,7 +476,7 @@
 								    	<li class="pb-2 d-block">
 								    		<div class="media ">
 								    			<div>
-											  <a href="#"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid align-self-center" alt="product_13"></a></div>
+											  <a href="/amazon/#"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid align-self-center" alt="product_13"></a></div>
 											  <div class="media-body">
 											    <h6 class="mt-0 f_15">Media heading<span class="float-right cart_cross">X</span></h6>
 											    <p><span class="f_13">1 x $ 299.00</span></p>
@@ -486,7 +486,7 @@
 								    	<li class="pb-2 d-block border-bottom pl-0">
 								    		<div class="media ">
 								    			<div>
-											  <a href="#"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid align-self-center" alt="product_21"></a></div>
+											  <a href="/amazon/#"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid align-self-center" alt="product_21"></a></div>
 											  <div class="media-body">
 											    <h6 class="mt-0 f_15">Media heading<span class="float-right cart_cross">X</span></h6>
 											    <p><span>1 x $ 299.00</span></p>
@@ -498,8 +498,8 @@
 								    		<span class="float-right">$230.00</span>
 								    	</li>
 								    	<li class="d-block font-weight-bolder pt-2">
-								    		<span class="text-left"><a href="cart">view cart</a></span>
-								    		<span class="float-right"><a href="checkout">check out</a></span>
+								    		<span class="text-left"><a href="/amazon/cart">view cart</a></span>
+								    		<span class="float-right"><a href="/amazon/checkout">check out</a></span>
 								    	</li>
 								    </ul>
 								  </div>
@@ -522,11 +522,11 @@
 					
 					<div class="col-lg-9 text-left sp_hz_menu">
 						<ul class="main-menu navbar">
-							<li><a href="index">Home</a></li>
-							<li><a href="shop-left-sidebar">Shop</a></li>
-							<li><a href="blog">blog</a></li>
-							<li><a href="portfolio-grid-4">gallery</a></li>
-							<li><a href="about-us">about us</a></li>
+							<li><a href="/amazon/index">Home</a></li>
+							<li><a href="/amazon/shop-left-sidebar">Shop</a></li>
+							<li><a href="/amazon/blog">blog</a></li>
+							<li><a href="/amazon/portfolio-grid-4">gallery</a></li>
+							<li><a href="/amazon/about-us">about us</a></li>
 							<li><a class="dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-expanded="false">pages  <i class="fas fa-angle-down"></i></a>
 							    <ul class="dropdown-menu">
 							    	<li class="d-block"><a class="dropdown-item font-weight-bolder" href="about-us">about us</a></li>
@@ -643,7 +643,7 @@
 								    		</li>
 								    		<li class="mg_menu col-lg-4 col-md-12">
 								    			<ul>
-									    			<li><a href="single-product"><img src="assets/img/product/deal2.jpg" class="fst-image mx-auto d-block mb-1 img-fluid" alt="deal2"></a></li>
+									    			<li><a href="/amazon/single-product"><img src="assets/img/product/deal2.jpg" class="fst-image mx-auto d-block mb-1 img-fluid" alt="deal2"></a></li>
 												</ul>
 								    		</li>
 							    		</ul>
@@ -665,15 +665,15 @@
 						            <li><a class="dropdown-item font-weight-bolder" href="forgot">forgot password</a></li>
 							    </ul>
 						</li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-tv"></i>TV & Audio</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-headphones-alt"></i>Headphone</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="far fa-clock"></i>Smart watch</a></li>
-						<li class="level-1 font-weight-bolder"><a href="shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
-						<li class="level-1 font-weight-bolder"><a href="shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
-						<li class="level-1 font-weight-bolder"><a href="single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tv"></i>TV & Audio</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-headphones-alt"></i>Headphone</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="far fa-clock"></i>Smart watch</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
 					</ul>
 					</div>
 			</div>
@@ -696,8 +696,8 @@
 				<div class="row ">
 					<div class="col-12 ">
 						<ul>
-							<li class="d-inline-block font-weight-bolder"><a href="index">home</a></li>
-							<li class="d-inline-block hr_ font-weight-bolder"><a href="#">login</a></li>
+							<li class="d-inline-block font-weight-bolder"><a href="/amazon/index">home</a></li>
+							<li class="d-inline-block hr_ font-weight-bolder"><a href="/amazon/#">login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -729,8 +729,8 @@
 					  
 					  <input type="submit" name="submit" class="btn btn-primary mb-3" value="submit">
 					  <div class="pass_acc border-top pt-3">
-						  <span class="forgot_password font-weight-bolder"><a href="forgot">Forgot your password? </a></span>
-						  <span class="no_account float-right font-weight-bolder"><a href="registration">No account? Create one here</a></span>
+						  <span class="forgot_password font-weight-bolder"><a href="/amazon/forgot">Forgot your password? </a></span>
+						  <span class="no_account float-right font-weight-bolder"><a href="/amazon/registration">No account? Create one here</a></span>
 					   </div>
 					</form> -->
 	            </div>
@@ -796,7 +796,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo1.png" class="second-img mx-auto d-block img-fluid" alt="logo1">												
 							</a>							
 						</div>
@@ -804,7 +804,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo2.png" class="second-img mx-auto d-block img-fluid" alt="logo2">												
 							</a>							
 						</div>
@@ -812,7 +812,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo3.png" class="second-img mx-auto d-block img-fluid" alt="logo3">												
 							</a>							
 						</div>
@@ -820,7 +820,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo4.png" class="second-img mx-auto d-block img-fluid" alt="logo4">												
 							</a>							
 						</div>
@@ -828,7 +828,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo1.png" class="second-img mx-auto d-block img-fluid" alt="logo1">												
 							</a>							
 						</div>
@@ -836,7 +836,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo2.png" class="second-img mx-auto d-block img-fluid" alt="logo2"> 												
 							</a>							
 						</div>
@@ -844,7 +844,7 @@
 
 					<div class="item">
 					    <div class="col-12">
-							<a href="#">
+							<a href="/amazon/#">
 									<img src="assets/img/logo3.png" class="second-img mx-auto d-block img-fluid" alt="logo3">												
 							</a>							
 						</div>
@@ -870,41 +870,41 @@
 							<ul class="add_row">
 								<li>
 									<div>
-										<a href="#"><svg width="18px" height="18px"><use xlink:href="#map"></use></svg></a>
+										<a href="/amazon/#"><svg width="18px" height="18px"><use xlink:href="#map"></use></svg></a>
 									</div>
 									<div class="data1 add">
-									 <a href="#">1093,  Marigold Lane,<br> Coral Way, Miami,<br>Florida, 33169</a>
+									 <a href="/amazon/#">1093,  Marigold Lane,<br> Coral Way, Miami,<br>Florida, 33169</a>
 									</div>
 								</li>
 								<li>
 									<div>
-										<a href="#"><svg height="16px" width="16px"><use xlink:href="#call" ></use></svg></a>
+										<a href="/amazon/#"><svg height="16px" width="16px"><use xlink:href="#call" ></use></svg></a>
 									</div>
 									<div>
-									<a href="#">610-403-403</a>
+									<a href="/amazon/#">610-403-403</a>
 									</div>
 								</li>
   								<li>
 									<div>
-										<a href="#"><svg height="16px" width="16px"><use xlink:href="#mail" ></use></svg></a>
+										<a href="/amazon/#"><svg height="16px" width="16px"><use xlink:href="#mail" ></use></svg></a>
 									</div>
 									<div>
-									<a href="#" class="mail_f">company@example.com</a>
+									<a href="/amazon/#" class="mail_f">company@example.com</a>
 									</div>
 								</li>
 							</ul>
 							<ul class="foo_pay">
 								<li>
-									<a href="#"><i class="fab fa-cc-mastercard"></i></a>
+									<a href="/amazon/#"><i class="fab fa-cc-mastercard"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fab fa-cc-visa"></i></a>
+									<a href="/amazon/#"><i class="fab fa-cc-visa"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fas fa-credit-card"></i></a>
+									<a href="/amazon/#"><i class="fas fa-credit-card"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fab fa-cc-paypal"></i></a>
+									<a href="/amazon/#"><i class="fab fa-cc-paypal"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -918,12 +918,12 @@
 							</div>
 							<div class="categorie collapse" id="sproduct">
 							<ul>
-								<li><a href="about-us">About Us</a></li>
-								<li><a href="#">Delivery Infomations</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Discount</a></li>
-								<li><a href="#">Custom Service</a></li>
-								<li><a href="#">Terms & Condition</a></li>
+								<li><a href="/amazon/about-us">About Us</a></li>
+								<li><a href="/amazon/#">Delivery Infomations</a></li>
+								<li><a href="/amazon/#">Privacy Policy</a></li>
+								<li><a href="/amazon/#">Discount</a></li>
+								<li><a href="/amazon/#">Custom Service</a></li>
+								<li><a href="/amazon/#">Terms & Condition</a></li>
 							</ul>
 						</div>
 						</div>
@@ -935,14 +935,14 @@
 							</div>
 							<div class="categorie collapse" id="tproduct">
 							<ul>
-								<li><a href="#">airplanes</a></li>
-								<li><a href="#">cars</a></li>
-								<li><a href="#">Helicopters</a></li>
-								<li><a href="#">Quadcopters</a></li>
-								<li><a href="#">RC Boats & Yachts</a></li>
-								<li><a href="#">RC Vehicle Parts</a></li>
-								<li><a href="#">Drones Mini Drones</a></li>
-								<li><a href="#">My personal info</a></li>
+								<li><a href="/amazon/#">airplanes</a></li>
+								<li><a href="/amazon/#">cars</a></li>
+								<li><a href="/amazon/#">Helicopters</a></li>
+								<li><a href="/amazon/#">Quadcopters</a></li>
+								<li><a href="/amazon/#">RC Boats & Yachts</a></li>
+								<li><a href="/amazon/#">RC Vehicle Parts</a></li>
+								<li><a href="/amazon/#">Drones Mini Drones</a></li>
+								<li><a href="/amazon/#">My personal info</a></li>
 
 							</ul>
 						</div>
@@ -955,12 +955,12 @@
 							</div>
 							<div class="categorie collapse" id="fh_product">
 							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Delivery</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Discount</a></li>
-								<li><a href="#">Custom Service</a></li>
-								<li><a href="#">Terms & Condition</a></li>
+								<li><a href="/amazon/#">About</a></li>
+								<li><a href="/amazon/#">Delivery</a></li>
+								<li><a href="/amazon/#">Privacy Policy</a></li>
+								<li><a href="/amazon/#">Discount</a></li>
+								<li><a href="/amazon/#">Custom Service</a></li>
+								<li><a href="/amazon/#">Terms & Condition</a></li>
 							</ul>
 						</div>
 						</div>
@@ -980,43 +980,43 @@
 						<div>
 							<ul class="item_name1">
 								<li class="text-uppercase text-white font-weight-bolder">fashion-</li>
-								<li><a href="#"> Sofa</a></li>
-								<li><a href="#">Chair</a></li>
-								<li><a href="#">Dining table</a></li>
-								<li><a href="#">Desk</a></li>
-								<li><a href="#">Table</a></li>
-								<li><a href="#">Lowline TV Units</a></li>
-								<li><a href="#">Living room</a></li>
-								<li><a href="#">Bathroom</a></li>
-								<li><a href="#">Stool  </a></li>
+								<li><a href="/amazon/#"> Sofa</a></li>
+								<li><a href="/amazon/#">Chair</a></li>
+								<li><a href="/amazon/#">Dining table</a></li>
+								<li><a href="/amazon/#">Desk</a></li>
+								<li><a href="/amazon/#">Table</a></li>
+								<li><a href="/amazon/#">Lowline TV Units</a></li>
+								<li><a href="/amazon/#">Living room</a></li>
+								<li><a href="/amazon/#">Bathroom</a></li>
+								<li><a href="/amazon/#">Stool  </a></li>
 							</ul>
 						</div>
 						<div>
 							<ul class="item_name1">
 								<li class="text-uppercase text-white font-weight-bolder">furniture-</li>
-								<li><a href="#">Living room</a></li>
-								<li><a href="#">Bathroom</a></li>
-								<li><a href="#">Stool  </a></li>
-								<li><a href="#"> bedroom</a></li>
-								<li><a href="#">Table lamp</a></li>
-								<li><a href="#">Nightstand</a></li>
-								<li><a href="#">Pillow</a></li>
-								<li><a href="#"> computer desk</a></li>
+								<li><a href="/amazon/#">Living room</a></li>
+								<li><a href="/amazon/#">Bathroom</a></li>
+								<li><a href="/amazon/#">Stool  </a></li>
+								<li><a href="/amazon/#"> bedroom</a></li>
+								<li><a href="/amazon/#">Table lamp</a></li>
+								<li><a href="/amazon/#">Nightstand</a></li>
+								<li><a href="/amazon/#">Pillow</a></li>
+								<li><a href="/amazon/#"> computer desk</a></li>
 							</ul>
 						</div>
 						<div>
 							<ul class="item_name1">
 								<li class="text-uppercase text-white font-weight-bolder">fashion-</li>
-								<li><a href="#"> Sofa</a></li>
-								<li><a href="#">Chair</a></li>
-								<li><a href="#">Dining table</a></li>
-								<li><a href="#"> computer desk</a></li>
-								<li><a href="#"> nightstand</a></li>
-								<li><a href="#"> pillow</a></li>
-								<li><a href="#"> Clock</a></li> 
-								<li><a href="#">Bathroom</a></li>
-								<li><a href="#">Stool  </a></li>
-								<li><a href="#"> bedroom</a></li>
+								<li><a href="/amazon/#"> Sofa</a></li>
+								<li><a href="/amazon/#">Chair</a></li>
+								<li><a href="/amazon/#">Dining table</a></li>
+								<li><a href="/amazon/#"> computer desk</a></li>
+								<li><a href="/amazon/#"> nightstand</a></li>
+								<li><a href="/amazon/#"> pillow</a></li>
+								<li><a href="/amazon/#"> Clock</a></li> 
+								<li><a href="/amazon/#">Bathroom</a></li>
+								<li><a href="/amazon/#">Stool  </a></li>
+								<li><a href="/amazon/#"> bedroom</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1024,8 +1024,8 @@
 						<ul class="item_name2">
 						 	<li><h6  class="text-uppercase text-white font-weight-bold pb-3">download the app</h6></li>
 						 	<li>
-						 		<a href="#"><img src="assets/img/foo_icon1.png" class="second-img img-fluid " alt="foo_icon1"></a>
-						 		<a href="#"><img src="assets/img/foo_icon2.png" class="second-img img-fluid " alt="foo_icon2"></a>
+						 		<a href="/amazon/#"><img src="assets/img/foo_icon1.png" class="second-img img-fluid " alt="foo_icon1"></a>
+						 		<a href="/amazon/#"><img src="assets/img/foo_icon2.png" class="second-img img-fluid " alt="foo_icon2"></a>
 						 	</li>
 						</ul>
 					</div>

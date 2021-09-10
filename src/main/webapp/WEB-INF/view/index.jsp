@@ -413,7 +413,7 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-primary mt-2 f_13 px-3 py-2 rounded" data-dismiss="modal">close</a>
-        <a href="/checkout" class="btn btn-primary mt-2 f_13 px-3 py-2 rounded">continue</a>
+        <a href="/amazon/checkout" class="btn btn-primary mt-2 f_13 px-3 py-2 rounded">continue</a>
       </div>
     </div>
   </div>
@@ -454,7 +454,7 @@
 
 			      </div>
 			      	<span>
-			      	<a href="/cart" class="btn btn-primary primary mt-3">add to cart</a>
+			      	<a href="/amazon/cart" class="btn btn-primary primary mt-3">add to cart</a>
 			      </span>
 			    </div>
         	</div>
@@ -529,8 +529,8 @@
 							  <span class="dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#" class="font-weight-bolder"> my account&nbsp;<i class="fas fa-angle-down"></i></a>
 							  </span>
 							  <div class="dropdown-menu r_menu dropdown-menu-right" >
-								    <a class="dropdown-item font-weight-bolder" href="/login">log in</a>
-								    <a class="dropdown-item font-weight-bolder" href="/registration">register</a>
+								    <a class="dropdown-item font-weight-bolder" href="/amazon/login">log in</a>
+								    <a class="dropdown-item font-weight-bolder" href="/amazon/registration">register</a>
 							  </div>
 							</div>
 						<div class="dropdown right1 md_1 hr_">
@@ -566,7 +566,7 @@
 			<div class="container custom_container header-top-container">
 				<div class="row">
 					<div class="col-xl-2 col-lg-2 col-6  head-logo">
-						<div class="text-left header-top-left pt-2"><a href="/index"><img src="assets/img/Hitech..png" class="img-responsive img" alt="Hitech"></a></div>
+						<div class="text-left header-top-left pt-2"><a href="/amazon/index"><img src="assets/img/Hitech..png" class="img-responsive img" alt="Hitech"></a></div>
 					</div> <!-- col-xl-2 col-lg-2 col-md-2 col-sm-3 head-logo -->
 					<div class="col-xl-10 col-lg-10 col-6  head-search">
 						<div class="d-flex navbar">
@@ -591,13 +591,13 @@
 						<div class="col-xl-4 col-lg-5 head-right text-right">
 							<ul>
 							<li class="md_compare d-lg-inline-block">
-								<a href="/compare">
+								<a href="/amazon/compare">
 								<span class="rcom d-lg-inline-block d-md-none d-sm-none d-none"><svg width="34px" height="34px"><use xlink:href="#compare"></use></svg></span>
 								<span class="comp_wish align-middle d-lg-inline-block font-weight-bolder">compare</span>
 								</a>
 							</li>
 							<li class="md_wish d-lg-inline-block d-md-none d-sm-none d-none">
-								<a href="/wishlist">
+								<a href="/amazon/wishlist">
 								<span class="rcom d-lg-inline-block d-md-none d-sm-none d-none"><svg  width="35px" height="35px"><use xlink:href="#favourite"></use></svg></span>
 								<span class="comp_wish align-middle d-lg-inline-block font-weight-bolder">favourite</span>
 								</a>
@@ -646,8 +646,8 @@
 								    		<span class="float-right">$230.00</span>
 								    	</li>
 								    	<li class="d-block font-weight-bolder pt-2">
-								    		<span class="text-left"><a href="/cart">view cart</a></span>
-								    		<span class="float-right"><a href="/checkout">check out</a></span>
+								    		<span class="text-left"><a href="/amazon/cart">view cart</a></span>
+								    		<span class="float-right"><a href="/amazon/checkout">check out</a></span>
 								    	</li>
 								    </ul>
 								  </div>
@@ -669,11 +669,11 @@
 				<div class="row">
 					<div class="col-lg-9 text-left">
 						<ul class="main-menu navbar">
-							<li><a href="/index">Home</a></li>
-							<li><a href="/shop-left-sidebar">Shop</a></li>
-							<li><a href="/blog">blog</a></li>
-							<li><a href="/portfolio-grid-4">gallery</a></li>
-							<li><a href="/about-us">about us</a></li>
+							<li><a href="/amazon/index">Home</a></li>
+							<li><a href="/amazon/shop-left-sidebar">Shop</a></li>
+							<li><a href="/amazon/blog">blog</a></li>
+							<li><a href="/amazon/portfolio-grid-4">gallery</a></li>
+							<li><a href="/amazon/about-us">about us</a></li>
 							<li><a class="dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-expanded="false">pages  <i class="fas fa-angle-down"></i></a>
 							    <ul class="dropdown-menu" >
 							    	<li class="d-block"><a class="dropdown-item font-weight-bolder" href="/about-us">about us</a></li>
@@ -791,7 +791,7 @@
 								    		</li>
 								    		<li class="mg_menu col-lg-4 col-md-12">
 								    			<ul>
-									    			<li><a href="/single-product"><img src="assets/img/product/deal2.jpg" class="fst-image mx-auto d-block mb-1 img-fluid" alt="deal2"></a></li>
+									    			<li><a href="/amazon/single-product"><img src="assets/img/product/deal2.jpg" class="fst-image mx-auto d-block mb-1 img-fluid" alt="deal2"></a></li>
 												</ul>
 								    		</li>
 							    		</ul>
@@ -813,15 +813,15 @@
 						            <li><a class="dropdown-item font-weight-bolder" href="/forgot">forgot password</a></li>
 							    </ul>
 						</li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-tv"></i>TV & Audio</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-headphones-alt"></i>Headphone</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="far fa-clock"></i>Smart watch</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
-						<li class="level-1 font-weight-bolder"><a href="/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tv"></i>TV & Audio</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-headphones-alt"></i>Headphone</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="far fa-clock"></i>Smart watch</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/shop-left-sidebar"><i class="far fa-keyboard"></i>Accessories</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-tshirt"></i>Fashion</a></li>
+						<li class="level-1 font-weight-bolder"><a href="/amazon/single-product"><i class="fas fa-universal-access"></i>Sale and Offers</a></li>
 					
 				</ul>
 			</div>
@@ -955,12 +955,12 @@
 				    	<!-- <div class="col-12"> -->
 				    		<div class="deal_thumb bg-white rounded d-flex">
 				    			<div class="col-sm-5 col-12 pro_image px-0">
-				    				<a href="/single-product"><img src="assets/img/product/deal_1.jpg" class="fst-image mx-auto d-block img-fluid" alt="deal_1"></a>
-									<a href="/single-product"><img src="assets/img/product/deal_2.jpg" class="second-img mx-auto d-block img-fluid" alt="deal_2"></a>
+				    				<a href="/amazon/single-product"><img src="assets/img/product/deal_1.jpg" class="fst-image mx-auto d-block img-fluid" alt="deal_1"></a>
+									<a href="/amazon/single-product"><img src="assets/img/product/deal_2.jpg" class="second-img mx-auto d-block img-fluid" alt="deal_2"></a>
 				    			</div>
 				    			<div class="col-sm-7 col-12">
 				    				<div class="detail d-inline-block">
-				    					<h6 class="font-weight-bolder mb-0"><a href="/single-product">Aliquam Lorem Erat Volutpat </a></h6>
+				    					<h6 class="font-weight-bolder mb-0"><a href="/amazon/single-product">Aliquam Lorem Erat Volutpat </a></h6>
 				    					<div class="star">
 				                            <i class="fas fa-star"></i>
 				                            <i class="fas fa-star"></i>
@@ -1027,8 +1027,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_3.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_3"></a>
-								<a href="/single-product"><img src="assets/img/product/product_4.jpg" class="second-img mx-auto d-block img-fluid" alt="product_4"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_3.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_3"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_4.jpg" class="second-img mx-auto d-block img-fluid" alt="product_4"></a>
 												
 							</div>
 
@@ -1049,7 +1049,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Hummingbird printed t-shirt</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Hummingbird printed t-shirt</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1062,8 +1062,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_5.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_5"></a>
-								<a href="/single-product"><img src="assets/img/product/product_6.jpg" class="second-img mx-auto d-block img-fluid" alt="product_6"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_5.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_5"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_6.jpg" class="second-img mx-auto d-block img-fluid" alt="product_6"></a>
 												
 							</div>
 
@@ -1083,7 +1083,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Aliquam Top Erat Volutpat</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Aliquam Top Erat Volutpat</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1096,8 +1096,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_7.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_7"></a>
-								<a href="/single-product"><img src="assets/img/product/product_8.jpg" class="second-img mx-auto d-block img-fluid" alt="product_8"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_7.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_7"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_8.jpg" class="second-img mx-auto d-block img-fluid" alt="product_8"></a>
 												
 							</div>
 
@@ -1117,7 +1117,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Hummingbird printed sweater</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Hummingbird printed sweater</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1130,8 +1130,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_9.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_9"></a>
-								<a href="/single-product"><img src="assets/img/product/product_10.jpg" class="second-img mx-auto d-block img-fluid" alt="product_10"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_9.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_9"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_10.jpg" class="second-img mx-auto d-block img-fluid" alt="product_10"></a>
 												
 							</div>
 
@@ -1151,7 +1151,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">The best is yet to come' Framed poster</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">The best is yet to come' Framed poster</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1164,8 +1164,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_11"></a>
-								<a href="/single-product"><img src="assets/img/product/product_12.jpg" class="second-img mx-auto d-block img-fluid" alt="product_12"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_11"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_12.jpg" class="second-img mx-auto d-block img-fluid" alt="product_12"></a>
 												
 							</div>
 
@@ -1221,8 +1221,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_13"></a>
-								<a href="/single-product"><img src="assets/img/product/product_14.jpg" class="second-img mx-auto d-block img-fluid" alt="product_14"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_13"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_14.jpg" class="second-img mx-auto d-block img-fluid" alt="product_14"></a>
 												
 							</div>
 
@@ -1242,7 +1242,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Today is a good day Framed poster</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Today is a good day Framed poster</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1255,8 +1255,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_15"></a>
-								<a href="/single-product"><img src="assets/img/product/product_16.jpg" class="second-img mx-auto d-block img-fluid" alt="product_16"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_15"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_16.jpg" class="second-img mx-auto d-block img-fluid" alt="product_16"></a>
 												
 							</div>
 
@@ -1276,7 +1276,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Mug The best is yet to come</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Mug The best is yet to come</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1289,8 +1289,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_17"></a>
-								<a href="/single-product"><img src="assets/img/product/product_18.jpg" class="second-img mx-auto d-block img-fluid" alt="product_18"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_17"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_18.jpg" class="second-img mx-auto d-block img-fluid" alt="product_18"></a>
 												
 							</div>
 
@@ -1310,7 +1310,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Mug The adventure begins</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Mug The adventure begins</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1323,8 +1323,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_19.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_19"></a>
-								<a href="/single-product"><img src="assets/img/product/product_20.jpg" class="second-img mx-auto d-block img-fluid" alt="product_20"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_19.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_19"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_20.jpg" class="second-img mx-auto d-block img-fluid" alt="product_20"></a>
 												
 							</div>
 
@@ -1344,7 +1344,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Latest Collection Simple Digital tv</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Latest Collection Simple Digital tv</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1357,8 +1357,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_21"></a>
-								<a href="/single-product"><img src="assets/img/product/product_22.jpg" class="second-img mx-auto d-block img-fluid" alt="product_22"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_21"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_22.jpg" class="second-img mx-auto d-block img-fluid" alt="product_22"></a>
 												
 							</div>
 
@@ -1378,7 +1378,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Chiffon Solid Multicolor washing machine</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Chiffon Solid Multicolor washing machine</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1391,8 +1391,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_23"></a>
-								<a href="/single-product"><img src="assets/img/product/product_24.jpg" class="second-img mx-auto d-block img-fluid" alt="product_24"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_23"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_24.jpg" class="second-img mx-auto d-block img-fluid" alt="product_24"></a>
 												
 							</div>
 
@@ -1412,7 +1412,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">specker Gathered Multicolor</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">specker Gathered Multicolor</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1425,8 +1425,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_25.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_25"></a>
-								<a href="/single-product"><img src="assets/img/product/product_26.jpg" class="second-img mx-auto d-block img-fluid" alt="product_26"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_25.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_25"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_26.jpg" class="second-img mx-auto d-block img-fluid" alt="product_26"></a>
 												
 							</div>
 
@@ -1446,7 +1446,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Czech earphone Wired Headset</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Czech earphone Wired Headset</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1459,8 +1459,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_27.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_27"></a>
-								<a href="/single-product"><img src="assets/img/product/product_28.jpg" class="second-img mx-auto d-block img-fluid" alt="product_28"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_27.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_27"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_28.jpg" class="second-img mx-auto d-block img-fluid" alt="product_28"></a>
 												
 							</div>
 
@@ -1480,7 +1480,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Panasonic ELUGA I6 (Black, 16 GB)</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Panasonic ELUGA I6 (Black, 16 GB)</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1493,8 +1493,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_29.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_29"></a>
-								<a href="/single-product"><img src="assets/img/product/product_30.jpg" class="second-img mx-auto d-block img-fluid" alt="product_30"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_29.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_29"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_30.jpg" class="second-img mx-auto d-block img-fluid" alt="product_30"></a>
 												
 							</div>
 
@@ -1514,7 +1514,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Samsung Free Side by Side Refrigerator</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Samsung Free Side by Side Refrigerator</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1527,8 +1527,8 @@
 				    	 <div class="product_thumb bg-white rounded">
 							<div class="pro_image">
 
-								<a href="/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_31"></a>
-								<a href="/single-product"><img src="assets/img/product/product_32.jpg" class="second-img mx-auto d-block img-fluid" alt="product_32"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image mx-auto d-block img-fluid" alt="product_31"></a>
+								<a href="/amazon/single-product"><img src="assets/img/product/product_32.jpg" class="second-img mx-auto d-block img-fluid" alt="product_32"></a>
 												
 							</div>
 
@@ -1548,7 +1548,7 @@
 										<i class="fa fa-star" aria-hidden="true"></i>
 										<i class="fa fa-star" aria-hidden="true"></i>
 									</div>
-										<h2 class="text-center pro-heading my-2"><a href="/single-product" class="font-weight-bolder">Gathered grey fillter</a></h2>
+										<h2 class="text-center pro-heading my-2"><a href="/amazon/single-product" class="font-weight-bolder">Gathered grey fillter</a></h2>
 										<span class="text-center"><span class="font-weight-bolder price">$69.00 </span> <del class="text-muted">$100.00</del></span>
 								</div>
 							</div>
@@ -1604,7 +1604,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_2.jpg" class=" mx-auto d-block img-fluid" alt="category_2"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_2.jpg" class=" mx-auto d-block img-fluid" alt="category_2"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">mobile</a></p>																
@@ -1619,7 +1619,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_1.jpg" class=" mx-auto d-block img-fluid" alt="category_1"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_1.jpg" class=" mx-auto d-block img-fluid" alt="category_1"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">fashion</a></p>																
@@ -1634,7 +1634,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_7.jpg" class=" mx-auto d-block img-fluid" alt="category_7"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_7.jpg" class=" mx-auto d-block img-fluid" alt="category_7"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">sports</a></p>																
@@ -1649,7 +1649,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_4.jpg" class=" mx-auto d-block img-fluid" alt="category_4"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_4.jpg" class=" mx-auto d-block img-fluid" alt="category_4"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">bags</a></p>																
@@ -1664,7 +1664,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_5.jpg" class=" mx-auto d-block img-fluid" alt="category_5"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_5.jpg" class=" mx-auto d-block img-fluid" alt="category_5"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">t-shirt</a></p>																
@@ -1679,7 +1679,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_6.jpg" class=" mx-auto d-block img-fluid" alt="category_6"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_6.jpg" class=" mx-auto d-block img-fluid" alt="category_6"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">camera</a></p>																
@@ -1694,7 +1694,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_7.jpg" class=" mx-auto d-block img-fluid"  alt="category_7"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_7.jpg" class=" mx-auto d-block img-fluid"  alt="category_7"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">laptop</a></p>																
@@ -1709,7 +1709,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_2.jpg" class=" mx-auto d-block img-fluid" alt="category_2"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_2.jpg" class=" mx-auto d-block img-fluid" alt="category_2"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">computer</a></p>																
@@ -1724,7 +1724,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_1.jpg" class=" mx-auto d-block img-fluid"  alt="category_1"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_1.jpg" class=" mx-auto d-block img-fluid"  alt="category_1"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">phone</a></p>																
@@ -1739,7 +1739,7 @@
 				    	 <div class="product_thumb top_thumb bg-white rounded">
 							<div class="cat_effect">
 								<div class="pro_image">
-									<a href="/shop-left-sidebar"><img src="assets/img/category/category_4.jpg" class=" mx-auto d-block img-fluid" alt="category_4"></a>
+									<a href="/amazon/shop-left-sidebar"><img src="assets/img/category/category_4.jpg" class=" mx-auto d-block img-fluid" alt="category_4"></a>
 								</div>							
 								<div class="main_text">									
 									<p class="text-center pro-heading my-2 text-uppercase"><a class="text-muted" href="/shop-left-sidebar">mobile</a></p>																
@@ -1781,15 +1781,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_1.jpg" class="fst-image img-fluid " alt="product_1"></a>
-										<a href="/single-product"><img src="assets/img/product/product_2.jpg" class="second-img  img-fluid" alt="product_2"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_1.jpg" class="fst-image img-fluid " alt="product_1"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_2.jpg" class="second-img  img-fluid" alt="product_2"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Fujifilm Mirrorless Camera Body Only</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Fujifilm Mirrorless Camera Body Only</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1808,15 +1808,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_3.jpg" class="fst-image img-fluid" alt="product_3"></a>
-										<a href="/single-product"><img src="assets/img/product/product_4.jpg" class="second-img  img-fluid" alt="product_4"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_3.jpg" class="fst-image img-fluid" alt="product_3"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_4.jpg" class="second-img  img-fluid" alt="product_4"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">New Stylish Analog Wrist Watch</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">New Stylish Analog Wrist Watch</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1837,15 +1837,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_5.jpg" class="fst-image img-fluid " alt="product_5"></a>
-										<a href="/single-product"><img src="assets/img/product/product_6.jpg" class="second-img  img-fluid" alt="product_6"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_5.jpg" class="fst-image img-fluid " alt="product_5"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_6.jpg" class="second-img  img-fluid" alt="product_6"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Samsung Galaxy J2 Core (Black, 16 GB)</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Samsung Galaxy J2 Core (Black, 16 GB)</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1864,15 +1864,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_7.jpg" class="fst-image img-fluid " alt="product_7"></a>
-										<a href="/single-product"><img src="assets/img/product/product_8.jpg" class="second-img  img-fluid" alt="product_8"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_7.jpg" class="fst-image img-fluid " alt="product_7"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_8.jpg" class="second-img  img-fluid" alt="product_8"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1893,15 +1893,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_9.jpg" class="fst-image img-fluid " alt="product_9"></a>
-										<a href="/single-product"><img src="assets/img/product/product_10.jpg" class="second-img  img-fluid" alt="product_10"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_9.jpg" class="fst-image img-fluid " alt="product_9"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_10.jpg" class="second-img  img-fluid" alt="product_10"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Chiffon Solid Multicolor washing machine</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Chiffon Solid Multicolor washing machine</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1920,15 +1920,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image img-fluid " alt="product_11"></a>
-										<a href="/single-product"><img src="assets/img/product/product_12.jpg" class="second-img  img-fluid" alt="product_12"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image img-fluid " alt="product_11"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_12.jpg" class="second-img  img-fluid" alt="product_12"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Fujifilm Mirrorless Camera Body Only</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Fujifilm Mirrorless Camera Body Only</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1949,15 +1949,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid" alt="product_13"></a>
-										<a href="/single-product"><img src="assets/img/product/product_14.jpg" class="second-img  img-fluid" alt="product_14"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid" alt="product_13"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_14.jpg" class="second-img  img-fluid" alt="product_14"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Micromax Bharat  Latest Collection</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Micromax Bharat  Latest Collection</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -1976,15 +1976,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
-										<a href="/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Mivi Zero Portable Bluetooth Speaker</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Mivi Zero Portable Bluetooth Speaker</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2033,15 +2033,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image img-fluid" alt="product_17"></a>
-										<a href="/single-product"><img src="assets/img/product/product_18.jpg" class="second-img img-fluid" alt="product_18"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image img-fluid" alt="product_17"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_18.jpg" class="second-img img-fluid" alt="product_18"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2060,15 +2060,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_19.jpg" class="fst-image img-fluid"  alt="product_19"></a>
-										<a href="/single-product"><img src="assets/img/product/product_20.jpg" class="second-img img-fluid" alt="product_20"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_19.jpg" class="fst-image img-fluid"  alt="product_19"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_20.jpg" class="second-img img-fluid" alt="product_20"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">new 7 inch with Wi-Fi Only Tablet</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">new 7 inch with Wi-Fi Only Tablet</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2089,15 +2089,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid" alt="product_21"></a>
-										<a href="/single-product"><img src="assets/img/product/product_22.jpg" class="second-img img-fluid" alt="product_22"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid" alt="product_21"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_22.jpg" class="second-img img-fluid" alt="product_22"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Samsung Galaxy Tab Only Tablet (Black)</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Samsung Galaxy Tab Only Tablet (Black)</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2116,15 +2116,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image img-fluid" alt="product_23"></a>
-										<a href="/single-product"><img src="assets/img/product/product_24.jpg" class="second-img img-fluid" alt="product_24"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image img-fluid" alt="product_23"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_24.jpg" class="second-img img-fluid" alt="product_24"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Samsung 23 L Solo Microwave Oven</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Samsung 23 L Solo Microwave Oven</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2145,15 +2145,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_25.jpg" class="fst-image img-fluid" alt="product_25"></a>
-										<a href="/single-product"><img src="assets/img/product/product_26.jpg" class="second-img  img-fluid" alt="product_26"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_25.jpg" class="fst-image img-fluid" alt="product_25"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_26.jpg" class="second-img  img-fluid" alt="product_26"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Richuzers Point And Shoot Digital Camera</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Richuzers Point And Shoot Digital Camera</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2172,15 +2172,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_27.jpg" class="fst-image img-fluid" alt="product_27"></a>
-										<a href="/single-product"><img src="assets/img/product/product_28.jpg" class="second-img img-fluid" alt="product_28"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_27.jpg" class="fst-image img-fluid" alt="product_27"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_28.jpg" class="second-img img-fluid" alt="product_28"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Solid Women Round cap</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Solid Women Round cap</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2201,15 +2201,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_29.jpg" class="fst-image img-fluid" alt="product_29"></a>
-										<a href="/single-product"><img src="assets/img/product/product_30.jpg" class="second-img img-fluid" alt="product_30"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_29.jpg" class="fst-image img-fluid" alt="product_29"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_30.jpg" class="second-img img-fluid" alt="product_30"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Sony CyberShot DSC-W810/BC IN5</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Sony CyberShot DSC-W810/BC IN5</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2228,15 +2228,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image img-fluid" alt="product_31"></a>
-										<a href="/single-product"><img src="assets/img/product/product_32.jpg" class="second-img img-fluid" alt="product_32"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image img-fluid" alt="product_31"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_32.jpg" class="second-img img-fluid" alt="product_32"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Latest Collection Simple Digital tv</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Latest Collection Simple Digital tv</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2292,15 +2292,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image img-fluid" alt="product_11"></a>
-										<a href="/single-product"><img src="assets/img/product/product_12.jpg" class="second-img img-fluid" alt="product_12"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_11.jpg" class="fst-image img-fluid" alt="product_11"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_12.jpg" class="second-img img-fluid" alt="product_12"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Samsung Free Side by Side Refrigerator</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Samsung Free Side by Side Refrigerator</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2319,15 +2319,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid" alt="product_13"></a>
-										<a href="/single-product"><img src="assets/img/product/product_14.jpg" class="second-img img-fluid" alt="product_14"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_13.jpg" class="fst-image img-fluid" alt="product_13"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_14.jpg" class="second-img img-fluid" alt="product_14"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">specker Gathered Multicolor</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">specker Gathered Multicolor</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2348,15 +2348,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
-										<a href="/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Samsung Galaxy J2 Core (Black, 16 GB)</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Samsung Galaxy J2 Core (Black, 16 GB)</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2375,15 +2375,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image img-fluid" alt="product_17"></a>
-										<a href="/single-product"><img src="assets/img/product/product_18.jpg" class="second-img img-fluid" alt="product_18"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_17.jpg" class="fst-image img-fluid" alt="product_17"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_18.jpg" class="second-img img-fluid" alt="product_18"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Micromax Bharat  Latest Collection</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Micromax Bharat  Latest Collection</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2404,15 +2404,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid" alt="product_21"></a>
-										<a href="/single-product"><img src="assets/img/product/product_22.jpg" class="second-img img-fluid" alt="product_22"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_21.jpg" class="fst-image img-fluid" alt="product_21"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_22.jpg" class="second-img img-fluid" alt="product_22"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">KRISONS ETERNITY 5.1BT with Bluetooth</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">KRISONS ETERNITY 5.1BT with Bluetooth</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2431,15 +2431,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image img-fluid" alt="product_23"></a>
-										<a href="/single-product"><img src="assets/img/product/product_24.jpg" class="second-img img-fluid" alt="product_24"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_23.jpg" class="fst-image img-fluid" alt="product_23"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_24.jpg" class="second-img img-fluid" alt="product_24"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Mivi Zero Portable Bluetooth Speaker</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Mivi Zero Portable Bluetooth Speaker</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2460,15 +2460,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image img-fluid" alt="product_31"></a>
-										<a href="/single-product"><img src="assets/img/product/product_32.jpg" class="second-img img-fluid" alt="product_32"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_31.jpg" class="fst-image img-fluid" alt="product_31"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_32.jpg" class="second-img img-fluid" alt="product_32"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">Bullets Wireless Z Bluetooth Headset</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2487,15 +2487,15 @@
 						    	 <div class="product_thumb bg-white rounded d-flex">
 									<div class="pro_image col-sm-5 col-lg-4 col-4 px-0">
 
-										<a href="/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
-										<a href="/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_15.jpg" class="fst-image img-fluid" alt="product_15"></a>
+										<a href="/amazon/single-product"><img src="assets/img/product/product_16.jpg" class="second-img img-fluid" alt="product_16"></a>
 														
 									</div>
 
 									<div class="text-left col-sm-7 col-lg-8 col-8 pr-0 mt-0 mt-xl-2">
 										
 										<div class="main_text">
-											<h2 class="pro-heading mb-0"><a href="/single-product" class="font-weight-bolder">new 7 inch with Wi-Fi Only Tablet</a></h2>
+											<h2 class="pro-heading mb-0"><a href="/amazon/single-product" class="font-weight-bolder">new 7 inch with Wi-Fi Only Tablet</a></h2>
 											<div class="star">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -2556,14 +2556,14 @@
 						    	<div class="col-12 blog_">
 						    	 <div class="d-flex">
 									<div class="blog_image col-6 px-0">
-										<a href="/single-blog"><img src="assets/img/blog/blog_1.jpg" class="fst-image img-fluid rounded" alt="blog_1"></a>	
+										<a href="/amazon/single-blog"><img src="assets/img/blog/blog_1.jpg" class="fst-image img-fluid rounded" alt="blog_1"></a>	
 										<div class="date text-center p-2 text-light font-weight-bold">
 											<div>09</div>
 											<div>oct</div>
 										</div>
 										<div class="blog_mask">	
 											<div class="blog_mask_content mx-0 my-auto text-center">
-												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
+												<a href="/amazon/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
 												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-link"></i></a>
 											</div>
 										</div>												
@@ -2571,10 +2571,10 @@
 
 									<div class="text-left col-6 pr-0">
 										
-										<h6 class="font-weight-bold"><a href="/single-blog">This is Secound Post For wbBlog</a></h6>
+										<h6 class="font-weight-bold"><a href="/amazon/single-blog">This is Secound Post For wbBlog</a></h6>
 										<span><i class="fas fa-comments text-muted pr-1 align-middle"></i><span class="text-muted align-middle">0 Comment</span></span>
 										<p class="text-muted mb-0 f_13">Sed elit the quamrich iaculis sed sempoersit udin vitae sed amet magna osemper the lorem osema olatiup udin...</p>
-										<a href="/single-blog" class="btn btn-primary  f_13  ">read more</a>
+										<a href="/amazon/single-blog" class="btn btn-primary  f_13  ">read more</a>
 
 									</div>
 								 </div>
@@ -2585,25 +2585,25 @@
 						    	<div class="col-12 blog_">
 						    	 <div class="d-flex">
 									<div class="blog_image col-6 px-0">
-										<a href="/single-blog" class="d-block"><img src="assets/img/blog/blog_2.jpg" class="fst-image img-fluid rounded"  alt="blog_2"></a>	
+										<a href="/amazon/single-blog" class="d-block"><img src="assets/img/blog/blog_2.jpg" class="fst-image img-fluid rounded"  alt="blog_2"></a>	
 										<div class="date text-center p-2 text-light font-weight-bold">
 											<div>09</div>
 											<div>oct</div>
 										</div>
 										<div class="blog_mask">	
 											<div class="blog_mask_content mx-0 my-auto text-center">
-												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
-												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-link"></i></a>
+												<a href="/amazon/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
+												<a href="/amazon/single-blog" class="icon d-inline-block"><i class="fas fa-link"></i></a>
 											</div>
 										</div>												
 									</div>
 
 									<div class="text-left col-6 pr-0">
 										
-										<h6 class="font-weight-bold"><a href="/single-blog">Vestibulum lobortis libero volu</a></h6>
+										<h6 class="font-weight-bold"><a href="/amazon/single-blog">Vestibulum lobortis libero volu</a></h6>
 										<span><i class="fas fa-comments text-muted pr-1 align-middle"></i><span class="text-muted align-middle">0 Comment</span></span>
 										<p class="text-muted mb-0 f_13">Sed elit the quamrich iaculis sed sempoersit udin vitae sed amet magna osemper the lorem osema olatiup udin...</p>
-										<a href="/single-blog" class="btn btn-primary  f_13  ">read more</a>
+										<a href="/amazon/single-blog" class="btn btn-primary  f_13  ">read more</a>
 
 									</div>
 								 </div>
@@ -2614,25 +2614,25 @@
 						    	<div class="col-12 blog_">
 						    	 <div class="d-flex">
 									<div class="blog_image col-6 px-0">
-										<a href="/single-blog"><img src="assets/img/blog/blog_3.jpg" class="fst-image img-fluid rounded" alt="blog_3"></a>		
+										<a href="/amazon/single-blog"><img src="assets/img/blog/blog_3.jpg" class="fst-image img-fluid rounded" alt="blog_3"></a>		
 										<div class="date text-center p-2 text-light font-weight-bold">
 											<div>09</div>
 											<div>oct</div>
 										</div>
 										<div class="blog_mask">	
 											<div class="blog_mask_content mx-0 my-auto text-center">
-												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
-												<a href="/single-blog" class="icon d-inline-block"><i class="fas fa-link"></i></a>
+												<a href="/amazon/single-blog" class="icon d-inline-block"><i class="fas fa-search"></i></a>
+												<a href="/amazon/single-blog" class="icon d-inline-block"><i class="fas fa-link"></i></a>
 											</div>
 										</div>												
 									</div>
 
 									<div class="text-left col-6 pr-0">
 										
-										<h6 class="font-weight-bold"><a href="/single-blog">Nunc placerat augue vel port</a></h6>
+										<h6 class="font-weight-bold"><a href="/amazon/single-blog">Nunc placerat augue vel port</a></h6>
 										<span><i class="fas fa-comments text-muted pr-1 align-middle"></i><span class="text-muted align-middle">0 Comment</span></span>
 										<p class="text-muted mb-0 f_13">Sed elit the quamrich iaculis sed sempoersit udin vitae sed amet magna osemper the lorem osema olatiup udin...</p>
-										<a href="/single-blog" class="btn btn-primary  f_13  ">read more</a>
+										<a href="/amazon/single-blog" class="btn btn-primary  f_13  ">read more</a>
 
 									</div>
 								 </div>
