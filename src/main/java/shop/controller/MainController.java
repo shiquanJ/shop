@@ -1,5 +1,7 @@
 package shop.controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -18,7 +20,7 @@ import shop.service.MainService;
 public class MainController {
 	
 	@Autowired
-	private MainService mainservice;
+	private MainService service;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MainController.class, args);
@@ -31,8 +33,6 @@ public class MainController {
 		HttpSession session = req.getSession(true);
 		String usernm = req.getParameter("usernm");
 		
-		String userInfo = mainservice.getUserInfo();
-		System.out.println(userInfo);
 		if(usernm == null){
 			mv.setViewName("/index");
 		}else{
@@ -59,11 +59,85 @@ public class MainController {
 		return mv;
 		
 	}
+	
+	//login
 	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/login");
+		HttpSession session = req.getSession(false);
+		
+		String email = req.getParameter("user_email");
+		String pwd = req.getParameter("user_password");
+		
+		if(session != null && email !=null){
+			System.out.println(session.getId());
+			ArrayList sessionList = service.getSession(session.getId());
+			if(sessionList != null){
+				// session 还在， 获取user信息返回主页面
+				// 获取user信息
+				String password = service.getUserInfo(email);
+				if(pwd.equals(password)){
+					//mv.addObject("userInfo", userInfo);
+					mv.setViewName("/index");
+				}else{
+					//密码错误
+					mv.setViewName("/login");
+				}
+			}else{
+				String password = service.getUserInfo(email);
+				if(password != null){
+					if(pwd.equals(password)){
+						mv.setViewName("/index");
+					}else{
+						mv.setViewName("/login");
+					}
+				}else{
+					mv.addObject("noUser", "noUser");
+					mv.setViewName("/login");
+				}
+			}
+		}else{
+			// 访问login 页面 
+			mv.setViewName("/login");
+		}
+		return mv;
+		
+	}
+	
+	//注册
+	@RequestMapping("/registration")
+	public ModelAndView registration(HttpServletRequest req){
+		
+		ModelAndView mv = new ModelAndView();
+		HttpSession session = req.getSession(true);
+		String gridRadios = req.getParameter("gridRadios");
+		String email = req.getParameter("r_email");
+		String pwd = req.getParameter("r_password");
+		
+		if(email != null && pwd != null){
+			//先获取db里的email
+			String password = service.getUserInfo(email);
+			if(password != null){
+				//说明已经注册了
+				
+				mv.setViewName("/registration");
+			}else{
+				//可以注册了
+				ArrayList userInfo = new ArrayList();
+				userInfo.add(email);
+				userInfo.add(pwd);
+				service.setSession(session.getId(),userInfo);
+				
+				service.setUserInfo(email, pwd);
+				
+				mv.addObject("regSuccess","Y");
+				mv.setViewName("/index");
+			}
+		}else{
+			mv.setViewName("/registration");
+		}
+		
 		return mv;
 		
 	}
@@ -173,14 +247,6 @@ public class MainController {
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/single-blog");
-		return mv;
-		
-	}
-	@RequestMapping("/registration")
-	public ModelAndView registration(HttpServletRequest req){
-		
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/registration");
 		return mv;
 		
 	}

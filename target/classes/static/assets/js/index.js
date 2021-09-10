@@ -4,8 +4,10 @@ $(document).ready(function () {
     	$( ' .preloader' ).fadeOut("fast");
     });
 var myFrame = document.getElementById('amazon');
-myFrame.onload=function(){
-	setIframeHeight(document.getElementById('amazon'));
+if(myFrame){
+	myFrame.onload=function(){
+		setIframeHeight(document.getElementById('amazon'));
+	}
 }
 function setIframeHeight(iframe) {
 	if (iframe) {

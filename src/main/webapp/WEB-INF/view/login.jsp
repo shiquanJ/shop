@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
   		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css">  
-		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<script src="assets/js/jquery-1.9.1.min.js"></script>
 		<script src="assets/js/owl.carousel.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
@@ -707,18 +707,18 @@
 			<div class="container custom_container ">
 	            <h3 class="text-center">Log in to your account </h3>
 	            <div id="login_container" class="page-content card card-block p-3 p-sm-4 ">
-	            	<!-- <form class="needs-validation " method="post" novalidate >
+	            	<form class="needs-validation " method="post" name="/amazon/login" novalidate >
 
 					  <div class="form-group">
 					    <label for="user_email" class="font-weight-bolder">Email address</label>
-					    <input type="email" class="form-control" id="user_email" aria-describedby="emailHelp" required>
+					    <input type="email" class="form-control" id="user_email" name="user_email" aria-describedby="emailHelp" required>
 					    <div class="invalid-feedback">Please Enter your Account Name.</div>
 					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					  </div>
 
 					  <div class="form-group font-weight-bolder" >
 					    <label for="user_password" class="font-weight-bolder">Password</label>
-					    <input type="password" class="form-control" id="user_password" required>
+					    <input type="password" class="form-control" id="user_password" name="user_password" required>
 					    <div class="invalid-feedback">Please enter your password.</div>
 					  </div>
 
@@ -732,7 +732,7 @@
 						  <span class="forgot_password font-weight-bolder"><a href="/amazon/forgot">Forgot your password? </a></span>
 						  <span class="no_account float-right font-weight-bolder"><a href="/amazon/registration">No account? Create one here</a></span>
 					   </div>
-					</form> -->
+					</form>
 	            </div>
 	        </div>
 	         
@@ -741,18 +741,18 @@
 
 
 	</div>	<!-- login_page -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	var obj = new WxLogin({
 		 self_redirect:true,
 		 id:"login_container", 
 		 appid: "wx0dab2a17e1921fda", 
 		 scope: "snsapi_login", 
-		 redirect_uri: encodeURIComponent("http://"+window.location.host+"/index"),
+		 redirect_uri: encodeURIComponent("http://"+window.location.host+"/amazon/index"),
 		  state: Math.ceil(Math.random()*1000),
 		 style: "black",
 		 href: "LmltcG93ZXJCb3ggLnFyY29kZSB7d2lkdGg6IDIwMHB4O30NCi5pbXBvd2VyQm94IC50aXRsZSB7ZGlzcGxheTogbm9uZTt9DQouaW1wb3dlckJveCAuaW5mbyB7d2lkdGg6IDIwMHB4O30NCi5zdGF0dXNfaWNvbiB7ZGlzcGxheTogbm9uZX0NCi5pbXBvd2VyQm94IC5zdGF0dXMge3RleHQtYWxpZ246IGNlbnRlcjt9IA0K"
 		 });
-	</script>
+	</script> -->
 
 <!-- login page -->
 
