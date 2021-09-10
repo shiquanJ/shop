@@ -4,15 +4,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import shop.service.MainService;
+
 @Controller
 @SpringBootApplication(scanBasePackages = "shop")
 public class MainController {
+	
+	@Autowired
+	private MainService mainservice;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(MainController.class, args);
 	}
@@ -24,7 +31,8 @@ public class MainController {
 		HttpSession session = req.getSession(true);
 		String usernm = req.getParameter("usernm");
 		
-		System.out.println(usernm);
+		String userInfo = mainservice.getUserInfo();
+		System.out.println(userInfo);
 		if(usernm == null){
 			mv.setViewName("/index");
 		}else{

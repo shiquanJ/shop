@@ -1,4 +1,4 @@
-package com.ibm.common;
+package shop.utils;
 
 import javax.servlet.http.HttpServletRequest;
 

@@ -1,4 +1,4 @@
-package com.ibm.common;
+package shop.utils;
 
 import java.io.IOException;
 import java.net.URI;

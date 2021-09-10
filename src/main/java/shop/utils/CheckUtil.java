@@ -1,4 +1,4 @@
-package com.ibm.common;
+package shop.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.AlgorithmParameters;

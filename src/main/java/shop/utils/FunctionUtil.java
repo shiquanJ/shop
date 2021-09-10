@@ -1,4 +1,4 @@
-package com.ibm.common;
+package shop.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
