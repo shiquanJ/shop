@@ -1,6 +1,7 @@
 package shop.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,7 +29,6 @@ public class MainController {
 	
 	@RequestMapping(value={"/","/index"})
 	public ModelAndView index(HttpServletRequest req, HttpServletResponse res){
-		res.setHeader("Access-Control-Allow-Origin", "http://localhost:8081");
 		ModelAndView mv = new ModelAndView();
 		HttpSession session = req.getSession(true);
 		String usernm = req.getParameter("usernm");
@@ -61,29 +61,30 @@ public class MainController {
 	}
 	
 	//login
+	/**
+	 * 
+	 * 先check sessionId 有没有用户信息， 
+	 * 没有用户，就用Email和pwd select 用户信息
+	 * @return
+	 */
 	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
 		HttpSession session = req.getSession(false);
+		HashMap map = new HashMap();
+		boolean sessionFlag = false;
 		
 		String email = req.getParameter("user_email");
 		String pwd = req.getParameter("user_password");
 		
 		if(session != null && email !=null){
 			System.out.println(session.getId());
-			ArrayList sessionList = service.getSession(session.getId());
-			if(sessionList != null){
-				// session 还在， 获取user信息返回主页面
-				// 获取user信息
-				String password = service.getUserInfo(email);
-				if(pwd.equals(password)){
-					//mv.addObject("userInfo", userInfo);
-					mv.setViewName("/index");
-				}else{
-					//密码错误
-					mv.setViewName("/login");
-				}
+			HashMap userMap = service.getSession(session.getId());
+			if(userMap.get("pwd").equals(pwd)){
+				sessionFlag = true;
+				mv.setViewName("/index");
+			
 			}else{
 				String password = service.getUserInfo(email);
 				if(password != null){
@@ -124,10 +125,10 @@ public class MainController {
 				mv.setViewName("/registration");
 			}else{
 				//可以注册了
-				ArrayList userInfo = new ArrayList();
-				userInfo.add(email);
-				userInfo.add(pwd);
-				service.setSession(session.getId(),userInfo);
+				HashMap userMap = new HashMap();
+				userMap.put("email", email);
+				userMap.put("pwd", pwd);
+				service.setSession(session.getId(),userMap);
 				
 				service.setUserInfo(email, pwd);
 				

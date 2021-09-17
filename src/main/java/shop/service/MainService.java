@@ -1,6 +1,7 @@
 package shop.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -13,13 +14,13 @@ public class MainService {
 	@Autowired
 	private RedisUtil redisUtil;
 	
-	public ArrayList getSession(String session){
+	public HashMap getSession(String session){
 		
-		return (ArrayList)redisUtil.get(session);
+		return (HashMap)redisUtil.hmget(session);
 	}
-	public boolean setSession(String session ,ArrayList userInfo){
+	public boolean setSession(String session ,HashMap userMap){
 		
-		return redisUtil.lSet(session, userInfo);
+		return redisUtil.hmset(session, userMap);
 	}
 	
 	public String getUserInfo(String email){

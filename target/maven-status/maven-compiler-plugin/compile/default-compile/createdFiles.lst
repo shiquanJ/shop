@@ -1,1 +1,9 @@
+shop\utils\RedisUtil.class
+shop\utils\HttpClientUtil.class
+shop\utils\URLUtils.class
+shop\utils\FunctionUtil.class
+shop\utils\RedisConfig.class
+shop\utils\CheckUtil.class
+shop\service\MainService.class
+shop\utils\JSONUtils.class
 shop\controller\MainController.class
