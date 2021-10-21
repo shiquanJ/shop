@@ -1,6 +1,5 @@
 package shop.controller;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 import shop.service.MainService;
 
 @Controller
+/*@ServletComponentScan("shop.filter")*/
 @SpringBootApplication(scanBasePackages = "shop")
 public class MainController {
 	
@@ -27,7 +28,7 @@ public class MainController {
 		SpringApplication.run(MainController.class, args);
 	}
 	
-	@RequestMapping(value={"/","/index"})
+	@RequestMapping(value={"/shop/","/shop/index"})
 	public ModelAndView index(HttpServletRequest req, HttpServletResponse res){
 		ModelAndView mv = new ModelAndView();
 		HttpSession session = req.getSession(true);
@@ -315,11 +316,10 @@ public class MainController {
 		return mv;
 		
 	}
-	@RequestMapping("/amazon")
+	@RequestMapping("/goError")
 	public ModelAndView amazon(HttpServletRequest req, HttpServletResponse res){
-		res.addHeader("Access-Control-Allow-Origin", "*");
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/index");
+		mv.setViewName("/error");
 		return mv;
 	}
 }

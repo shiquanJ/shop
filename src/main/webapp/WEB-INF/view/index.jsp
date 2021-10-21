@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="" lang="zh">
 <head>
-	<title>NII代购网-Nothing Is Imposible</title>
+	<title>Nothing Is Imposible</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -31,10 +31,10 @@
 
 <!-- 这是嵌套amazon商品 -->
 <!--运维  -->
-	<iframe  id='amazon' src="https://www.sgshop.top" width="100%" frameborder='0' class='frame-height'>
+	<iframe  id='amazon' src="https://www.sgshop.top/amazon" width="100%" frameborder='0' class='frame-height'>
 	</iframe>
 <!--本地  -->
-	<!-- <iframe  id='amazon' src="http://localhost" width="100%" frameborder='0' class='frame-height'>
+	<!-- <iframe  id='amazon' src="http://localhost/amazon" width="100%" frameborder='0' class='frame-height'>
 	</iframe> -->
 <!-- footer -->
 	<%@include file="../view/common/footer.jsp" %>

@@ -1,5 +1,6 @@
 shop\utils\RedisUtil.class
 shop\utils\HttpClientUtil.class
+shop\filter\URLFilter.class
 shop\utils\URLUtils.class
 shop\utils\FunctionUtil.class
 shop\utils\RedisConfig.class

@@ -69,7 +69,7 @@
                             <div class="logo">
                                 <a href="/shop/index">
                                     <!-- <img src="assets/images/logo.png" alt="logo"> -->
-                                    <p>NII代购网</p>
+                                    <!-- <p>NII代购网</p> -->
                                 </a>
                             </div>
                         </div>
@@ -80,12 +80,12 @@
                         <nav class="navbar navbar-expand-md navbar-light">
                             <a class="navbar-brand" href="/shop/index">
                                 <!-- <img src="assets/images/logo.png" alt="logo"> -->
-                                <p>NII代购网</p>
+                                <!-- <p>NII代购网</p> -->
                             </a>
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a href="http://116.62.231.62/-/zh/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" class="nav-link">
+                                        <a href="/-/zh/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" class="nav-link">
                                            	 今日特价
                                         </a>
                                     </li>
@@ -198,13 +198,13 @@
                                 <div class="others-options">
                                     <ul>
                                         <li>
-                                            <a href="/shop/login" class="log-in-register">
+                                            <a href="/login" class="log-in-register">
                                                 <i class="bx bx-user"></i>
                                                 	登录 / 
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/shop/registration" class="log-in-register">
+                                            <a href="/registration" class="log-in-register">
                                                 	注册 
                                             </a>
                                         </li>

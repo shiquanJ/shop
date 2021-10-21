@@ -2,82 +2,95 @@
 		<footer class="footer-area pt-100 pb-70">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>About Us</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique beatae laudantium alias aspernatur officiis,ab voluptatum asperiores repudiandae!Quia qui quasi quaerat quisquam delectus culpa rem dolores impedit.</p>
+                	<div class="col-lg-4 col-md-8">
+                		<div>
+                            <h3>&nbsp;</h3>
                         </div>
-                    </div>
+                	</div>
+                	<div class="col-lg-4 col-md-8">
+                		<div class="single-footer-widget">
+                            <h3>ICP备案号：2021010265</h3>
+                        </div>
+                	</div>
+                </div>
+                <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="single-footer-widget">
-                            <h3>My Account</h3>
+                            <h3>了解我们</h3>
                             <ul class="import-link">
                                 <li>
-                                    <a href="my-account.html">My Account</a>
+                                    <a href="my-account.html">人才招聘</a>
                                 </li>
                                 <li>
-                                    <a href="checkout.html">Order History</a>
+                                    <a href="checkout.html">博客</a>
                                 </li>
                                 <li>
-                                    <a href="wishlist.html">Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">Faq</a>
+                                    <a href="wishlist.html">投资者关系</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="single-footer-widget">
-                            <h3>Categories</h3>
+                            <h3>我的账户</h3>
                             <ul class="import-link">
                                 <li>
-                                    <a href="#">Decorative</a>
+                                    <a href="my-account.html">我的账户</a>
                                 </li>
                                 <li>
-                                    <a href="#">Kitchen Ultrens</a>
+                                    <a href="checkout.html">我的订单</a>
                                 </li>
                                 <li>
-                                    <a href="#">Chair &Bar Stools</a>
+                                    <a href="wishlist.html">购物车</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sofa &Armchair</a>
+                                    <a href="privacy-policy.html">发送与配送</a>
                                 </li>
                                 <li>
-                                    <a href="#">Interior Lighting</a>
+                                    <a href="faq.html">退货与换货</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="single-footer-widget">
-                            <h3>Contact Us</h3>
+                            <h3>支付方式</h3>
+                            <ul class="import-link">
+                                <li>
+                                    <a href="#">使用积分购物</a>
+                                </li>
+                                <li>
+                                    <a href="#">账户充值</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget">
+                            <h3>联系我们</h3>
                             <ul class="address">
                                 <li>
-                                    <span>Phone</span>
+                                    <span>电话</span>
                                     <i class="bx bx-phone"></i>
-                                    <a href="tel:+1-(143)-258-1856">+1(143) 258-1856</a>
+                                    <a href="tel:+86 18640844669">+86 186-4084-4669</a>
                                 </li>
                                 <li>
                                     <span>Email</span>
                                     <i class="bx bx-envelope"></i>
                                     <a href="/cdn-cgi/l/email-protection#0c65626a634c6065746d226f6361">
-                                        <span class="__cf_email__" data-cfemail="d1b8bfb7be91bdb8a9b0ffb2bebc">[email &#160;protected]</span>
+                                        <span class="__cf_email__" data-cfemail="d1b8bfb7be91bdb8a9b0ffb2bebc">[jiangshiquan2020@163.com]</span>
                                     </a>
                                 </li>
                                 <li class="location">
                                     <Span>Address</Span>
                                     <i class="bx bx-location-plus"></i>
-                                    123,Western Road,Melbourne Australia 
+                                    	大连市高新园区雯君庭
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-30">
+                <!-- <div class="row mt-30">
                     <div class="col-lg-3">
                         <div class="single-widget-bottom">
                             <h3>Follow Us</h3>
@@ -122,7 +135,7 @@
                         <div class="single-widget-bottom">
                             <h3>Payment Method</h3>
                             <ul class="payment">
-                                <!-- <li>
+                                <li>
                                     <a href="#" target="_blank">
                                         <img src="assets/images/payment/card-1.jpg" alt="Image">
                                     </a>
@@ -141,11 +154,11 @@
                                     <a href="#" target="_blank">
                                         <img src="assets/images/payment/card-4.jpg" alt="Image">
                                     </a>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </footer>
          <div class="copy-right-area">
@@ -154,7 +167,7 @@
                     <div class="col-lg-6">
                         <p>
                             Copyright <i class="bx bx-copyright"></i>
-                            2021 Lixa. Designed By <a href="http://www.bootstrapmb.com" target="_blank">EnvyTheme</a>
+                            2021. Designed By <a href="http://www.bootstrapmb.com" target="_blank">姜世权</a>
                         </p>
                     </div>
                     <div class="col-lg-6">
