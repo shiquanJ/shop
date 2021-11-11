@@ -69,7 +69,7 @@
                             <div class="logo">
                                 <a href="/shop/index">
                                     <!-- <img src="assets/images/logo.png" alt="logo"> -->
-                                    <!-- <p>NII代购网</p> -->
+                                    <h5>购购SG</h5>
                                 </a>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                         <nav class="navbar navbar-expand-md navbar-light">
                             <a class="navbar-brand" href="/shop/index">
                                 <!-- <img src="assets/images/logo.png" alt="logo"> -->
-                                <!-- <p>NII代购网</p> -->
+                                <h5>购购SG</h5>
                             </a>
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
@@ -213,12 +213,17 @@
                                                 <i class="bx bx-search"></i>
                                             </button>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="cart.html" class="cart-icon">
                                                 <i class="bx bx-shopping-bag"></i>
                                                 <span>03</span>
                                             </a>
-                                        </li>
+                                        </li> -->
+                                        <li>
+											<a href="javascript:void(0);" class="cart-icon" onclick="fnCartPage();">
+												<i class="bx bx-shopping-bag"></i>(<em id="cartCnt">0</em>)
+											</a>
+										</li>
                                         <li>
                                             <span class="burger-menu">
                                                 <i class="bx bx-menu"></i>

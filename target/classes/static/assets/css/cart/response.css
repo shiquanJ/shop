@@ -1,0 +1,99 @@
+@media all and (max-width: 1280px) {
+	
+}
+@media all and (max-width: 1160px) {
+	.pdtListType .pdtCont .name{
+		font-size: 38px;
+	}
+	.pdtListType .pdtCont .price .num{
+		font-size: 38px;
+	}
+	.keywordInput{display: none;}
+	#orderHeader{
+	    height: 120px;
+	    font-size:20px;
+	}
+	#orderHeader .orderHead .logo img{
+		height: 60px;
+	}
+	#container .mainNewPdt2 .subTitle{
+		font-size: 42px;
+	}
+	.contWrap .pdtListType .swiper-slide{
+		width: 45%;
+	}
+	#footer{
+		font-size: 28px;
+	}
+	#footer .ftinfo .info span{
+		font-size: 22px;
+	}
+	
+	.pdtListType .pdtStatus .iconNew{
+		display:none;
+	}
+	.pdtListType .pdtStatus [class*="icon"] + [class*="icon"]{
+		display:none;
+	}
+	.layerPop .layerTitle{
+		font-size: 32px;
+	}
+	.layerPop .alertCont .txt4{
+		font-size: 28px;
+	}
+	.layerPop .btnWrap span [class*="btnType"]{
+		font-size: 28px;
+	}
+	.orderWrap .cartListChk .inputChk{
+		font-size: 22px;
+	}
+	[class*="btnType7"]{
+		font-size: 28px;
+	}
+	body {
+		font-size: 22px;
+	}
+	.btnType2m {
+		font-size: 28px;
+	}
+	.btnType4xl {
+		font-size: 28px;
+	}
+	#info_popup .layerWrap{
+		width:90%;
+		height:60%;
+		font-size:28px;
+		
+	}
+	#pay_popup .layerWrap{
+		font-size:32px;
+	}
+	[class*="btnType2"]{
+		font-size:28px;
+	}
+	.btnType1s{
+		font-size:28px;
+	}
+	.totalPayment .loginTxt .btnType1s{
+		font-size:28px;
+		padding: 15 30px 45;
+	}
+	.orderWrap .cartList > ul > li{
+		font-size: 28px;
+	}
+	.btnType4{
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 1160px){
+	.keywordInput{display: none;}
+}
+@media all and (max-width: 1040px) {
+	.keywordInput{display: none;}
+}
+@media all and (max-width: 950px) {
+	.keywordInput{display: none;}
+}
+@media all and (max-width: 860px) {
+	.keywordInput{display: none;}
+}

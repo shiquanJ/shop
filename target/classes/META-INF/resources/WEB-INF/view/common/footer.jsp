@@ -9,7 +9,7 @@
                 	</div>
                 	<div class="col-lg-4 col-md-8">
                 		<div class="single-footer-widget">
-                            <h3>ICP备案号：2021010265</h3>
+                            <h3><a href="https://beian.miit.gov.cn" style="color: white;">ICP备案号：2021010265</a></h3>
                         </div>
                 	</div>
                 </div>

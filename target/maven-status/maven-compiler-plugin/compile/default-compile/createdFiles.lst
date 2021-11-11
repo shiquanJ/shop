@@ -1,10 +1,14 @@
 shop\utils\RedisUtil.class
 shop\utils\HttpClientUtil.class
 shop\filter\URLFilter.class
+shop\bean\PaypalConfig.class
 shop\utils\URLUtils.class
 shop\utils\FunctionUtil.class
 shop\utils\RedisConfig.class
+shop\bean\PaypalPaymentMethod.class
 shop\utils\CheckUtil.class
 shop\service\MainService.class
+shop\service\PayPalService.class
 shop\utils\JSONUtils.class
+shop\bean\PaypalPaymentIntent.class
 shop\controller\MainController.class
