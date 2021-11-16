@@ -6,19 +6,15 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">	
-		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">				
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/media.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.ico">
-  		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css">
-  		<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
@@ -504,7 +500,7 @@
 
 
 
-	<div class="preloader"></div>
+	<!-- <div class="preloader"></div> -->
 
 <!-- header area -->
 
@@ -2920,7 +2916,7 @@
 
 	<a href="#" id="scroll"></a>
 	
-	<script  src="assets/js/jquery-1.9.1.min.js"></script>
+	<!-- <script  src="assets/js/jquery-1.9.1.min.js"></script>
 	<script  src="assets/js/owl.carousel.js"></script>
 	<script  src="assets/js/bootstrap.min.js"></script>
 	<script  src="assets/js/popper.min.js"></script>
@@ -2951,7 +2947,7 @@
 	        document.getElementById("minute").innerHTML ='0' ;  
 	        document.getElementById("second").innerHTML = '0'; } 
 	}, 1000); 
-</script> 
+</script>  -->
 
 </body>
 </html>

@@ -1,35 +1,37 @@
 package shop.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import shop.utils.RedisUtil;
+import shop.dao.MainDao;
 
 @Component
 public class MainService {
 	
 	@Autowired
-	private RedisUtil redisUtil;
+	private MainDao dao;
 	
-	public HashMap getSession(String session){
+	public List<HashMap> getUserList(){
 		
-		return (HashMap)redisUtil.hmget(session);
-	}
-	public boolean setSession(String session ,HashMap userMap){
-		
-		return redisUtil.hmset(session, userMap);
+		return dao.getUserList();
 	}
 	
-	public String getUserInfo(String email){
+	public List<HashMap> getBannerList(){
 		
-		return (String)redisUtil.get(email);
+		return dao.getBannerList();
 	}
 	
-	public boolean setUserInfo(String email, String pwd){
+	public List<HashMap> getLookBookList(){
 		
-		return redisUtil.set(email, pwd);
+		return dao.getLookBookList();
 	}
+	
+	public List<HashMap> getPrdList(){
+		
+		return dao.getPrdList();
+	}
+	
 }

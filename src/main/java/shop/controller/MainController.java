@@ -56,6 +56,22 @@ public class MainController {
 		SpringApplication.run(MainController.class, args);
 	}
 	
+	@RequestMapping(value={"/","/index"})
+	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){
+		ModelAndView mv = new ModelAndView();
+		
+		List<HashMap> bannerList = service.getBannerList();
+		List<HashMap> lookbookList = service.getLookBookList();
+		List<HashMap> prdList = service.getPrdList();
+		
+		mv.addObject("bannerList", bannerList);
+		mv.addObject("lookbookList", lookbookList);
+		mv.addObject("prdList", prdList);
+		mv.setViewName("/index");
+		
+		return mv;
+		
+	}
 	@RequestMapping(value={"/shop/","/shop/index"})
 	public ModelAndView index(HttpServletRequest req, HttpServletResponse res){
 		ModelAndView mv = new ModelAndView();
@@ -96,7 +112,7 @@ public class MainController {
 	 * 没有用户，就用Email和pwd select 用户信息
 	 * @return
 	 */
-	@RequestMapping("/login")
+	/*@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
@@ -133,10 +149,10 @@ public class MainController {
 		}
 		return mv;
 		
-	}
+	}*/
 	
 	//注册
-	@RequestMapping("/registration")
+	/*@RequestMapping("/registration")
 	public ModelAndView registration(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
@@ -170,7 +186,7 @@ public class MainController {
 		
 		return mv;
 		
-	}
+	}*/
 	@RequestMapping("/compare")
 	public ModelAndView compare(HttpServletRequest req){
 		

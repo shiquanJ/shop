@@ -1,4 +1,4 @@
-$(function (){
+/*$(function (){
 });
 
 var iframeDoc = null;
@@ -35,9 +35,10 @@ function addEvt(){
 		var frm = document.getElementByName('reForm');
 		frm.submit();
 	});
-	/*iframeDoc.getElementById('add-to-cart-button').onclick=function(){
+	iframeDoc.getElementById('add-to-cart-button').onclick=function(){
 		
-	}*/
+	}
 	
 }
 
+*/
