@@ -3,6 +3,7 @@ package shop.controller;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,6 +38,7 @@ import shop.bean.PaypalPaymentIntent;
 import shop.bean.PaypalPaymentMethod;
 import shop.service.MainService;
 import shop.service.PayPalService;
+import shop.utils.SessionUtil;
 import shop.utils.URLUtils;
 
 @Controller
@@ -51,6 +53,8 @@ public class MainController {
     private PayPalService paypalService;
 	@Autowired
 	private MainService service;
+	@Autowired
+	private SessionUtil sessionUtil;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MainController.class, args);
@@ -60,13 +64,9 @@ public class MainController {
 	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){
 		ModelAndView mv = new ModelAndView();
 		
-		List<HashMap> bannerList = service.getBannerList();
-		List<HashMap> lookbookList = service.getLookBookList();
-		List<HashMap> prdList = service.getPrdList();
+		//获取main页面信息
+		service.getMainList(mv);
 		
-		mv.addObject("bannerList", bannerList);
-		mv.addObject("lookbookList", lookbookList);
-		mv.addObject("prdList", prdList);
 		mv.setViewName("/index");
 		
 		return mv;
@@ -105,79 +105,86 @@ public class MainController {
 		
 	}
 	
-	//login
 	/**
 	 * 
 	 * 先check sessionId 有没有用户信息， 
 	 * 没有用户，就用Email和pwd select 用户信息
 	 * @return
 	 */
-	/*@RequestMapping("/login")
+	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
-		HttpSession session = req.getSession(false);
-		HashMap map = new HashMap();
-		boolean sessionFlag = false;
 		
-		String email = req.getParameter("user_email");
-		String pwd = req.getParameter("user_password");
-		
-		if(session != null && email !=null){
-			System.out.println(session.getId());
-			HashMap userMap = service.getSession(session.getId());
-			if(userMap.get("pwd").equals(pwd)){
-				sessionFlag = true;
-				mv.setViewName("/index");
+		String r_email = req.getParameter("r_email");
+		String r_password = req.getParameter("r_password");
+		if(r_email !=null && r_password != null){
+			HashMap map = new HashMap();
+			map.put("r_email", r_email);
+			Map<String, Object> chkLogin = service.chkLogin(map);
 			
+			String member_pwd = (String) chkLogin.get("member_pwd");
+			//有session的时候
+			if(member_pwd != null && member_pwd.equals(r_password)){
+				
+				map.put("member_id", chkLogin.get("member_id"));
+				Map<String, Object> userInfo = service.getUserInfo(map);
+				
+				map.put("session_id", req.getSession().getId());
+				map.put("member_ip", "");
+				
+				mv.addObject("userInfo",userInfo);
+				
+				//获取main页面信息
+				service.getMainList(mv);
+				
+				mv.setViewName("/index");
 			}else{
-				String password = service.getUserInfo(email);
-				if(password != null){
-					if(pwd.equals(password)){
-						mv.setViewName("/index");
-					}else{
-						mv.setViewName("/login");
-					}
-				}else{
-					mv.addObject("noUser", "noUser");
-					mv.setViewName("/login");
-				}
+				// 访问login 页面 
+				mv.setViewName("/login");
 			}
-		}else{
+		}
+		else{
 			// 访问login 页面 
 			mv.setViewName("/login");
 		}
 		return mv;
 		
-	}*/
+	}
 	
 	//注册
-	/*@RequestMapping("/registration")
+	@RequestMapping("/registration")
 	public ModelAndView registration(HttpServletRequest req){
 		
 		ModelAndView mv = new ModelAndView();
 		HttpSession session = req.getSession(true);
 		String gridRadios = req.getParameter("gridRadios");
-		String email = req.getParameter("r_email");
-		String pwd = req.getParameter("r_password");
+		String r_name = req.getParameter("r_name");
+		String r_email = req.getParameter("r_email");
+		String r_password = req.getParameter("r_password");
 		
-		if(email != null && pwd != null){
+		if(r_name != null &&r_email != null && r_password != null){
 			//先获取db里的email
-			String password = service.getUserInfo(email);
-			if(password != null){
+			HashMap map = new HashMap();
+			map.put("r_name", r_name);
+			map.put("r_email", r_email);
+			String password = service.getDBPwd(map);
+			if(password.equals(r_password)){
 				//说明已经注册了
-				
 				mv.setViewName("/registration");
 			}else{
 				//可以注册了
-				HashMap userMap = new HashMap();
-				userMap.put("email", email);
-				userMap.put("pwd", pwd);
-				service.setSession(session.getId(),userMap);
+				HashMap insertMap = new HashMap();
+				insertMap.put("r_name", r_name);
+				insertMap.put("r_email", r_email);
+				insertMap.put("r_password", r_password);
+				int i = service.insSG_MEMBER(insertMap);
+				if(i == 0){
+					mv.addObject("message", "注册失败");
+				}
+				//获取main页面信息
+				service.getMainList(mv);
 				
-				service.setUserInfo(email, pwd);
-				
-				mv.addObject("regSuccess","Y");
 				mv.setViewName("/index");
 			}
 		}else{
@@ -186,7 +193,7 @@ public class MainController {
 		
 		return mv;
 		
-	}*/
+	}
 	@RequestMapping("/compare")
 	public ModelAndView compare(HttpServletRequest req){
 		

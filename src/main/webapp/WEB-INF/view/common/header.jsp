@@ -1,4 +1,13 @@
 <%@page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- Preload -->
+<div id="loading" class="preloader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<!-- End Preload -->
+
 <!-- Search START -->
 <div class="px-search-full collapse bg-dark p-3 z-index-999 position-fixed w-100 top-0" id="search-open">
     <div class="container position-relative">
@@ -529,6 +538,7 @@
 </div>
 <!-- End Ask About Product-->
 
+<!--Header  -->
 <div class="header-height-bar"></div>
 <header class="header-main bg-white header-light fixed-top header-height">
     <!-- Top Header -->
@@ -541,15 +551,13 @@
                         <li class="nav-item me-3 text-white-85">
                             <span>
                                 <i class="bi bi-clock me-2"></i>
-                                Visit time: Mon-Sat 9:30-20:00
-                                
+                                	开发一下现在时间
                             </span>
                         </li>
                         <li class="nav-item">
                             <a href="javascript:void(0);" class="navbar-link">
                                 <i class="bi bi-headset me-2"></i>
-                                Call us now: +012 123 456 789
-                                
+                               	 随机播放音乐
                             </a>
                         </li>
                     </ul>
@@ -557,10 +565,9 @@
                 <!-- Right -->
                 <div class="d-flex align-items-center justify-content-center w-100 w-lg-auto">
                     <!-- Language -->
-                    <div class="dropdown ms-0 ms-lg-3">
+                    <!-- <div class="dropdown ms-0 ms-lg-3">
                         <a class="dropdown-toggle text-white" href="javascript:void(0);" role="button" id="dropdown_language" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="me-2" width="20" src="assets/img/flags/uk.svg" alt="">English
-                            
+                            <img class="me-2" width="20" src="assets/img/flags/china.jpg" alt="">中文
                         </a>
                         <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdown_language" style="margin: 0px;">
                             <div class="dropdown-item">
@@ -581,17 +588,27 @@
                                 <img class="me-2" width="20" src="assets/img/flags/gr.svg" alt="">Deutsch
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Top link -->
                     <ul class="nav ms-auto ms-lg-3">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="contact-us.html" class="nav-link text-white">Contact</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#topbarlogin">
-                                <i class="bi bi-person-circle me-2"></i>
-                                Login
-                            </a>
+                        <c:choose>
+                        	<c:when test="${userInfo.member_id eq null }">
+	                            <a href="javascript:void(0);" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#topbarlogin">
+	                                <i class="bi bi-person-circle me-2"></i>
+	                              	 请登录
+	                            </a>
+                        	</c:when>
+                        	<c:otherwise>
+                        		<%-- <img alt="" src="${userInfo.img_url}">
+	                        	<a href="#" class="nav-link text-white">
+	                              	 ${userInfo.member_name}
+	                            </a> --%>
+                        	</c:otherwise>
+                        </c:choose>
                         </li>
                     </ul>
                     <!-- Top social -->
@@ -1017,23 +1034,34 @@
             </div>
             <!-- End Menu -->
             <div class="nav flex-nowrap align-items-center header-right">
-                <!-- Nav Search-->
-                <div class="nav-item">
-                    <a class="nav-link collapsed" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open" aria-expanded="false">
-                        <i class="bi bi-search"></i>
-                    </a>
-                </div>
                 <!-- Acount -->
                 <div class="nav-item dropdown">
-                    <a class="nav-link" href="javascript:void(0);" role="button" id="dropdown_myaccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="bi bi-person-circle"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdown_myaccount">
-                        <a class="dropdown-item" href="login.html">Login</a>
-                        <a class="dropdown-item" href="sign-up.html">Register</a>
-                        <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                        <a class="dropdown-item" href="my-account.html">My account</a>
-                    </div>
+                	<c:choose>
+                    <c:when test="${userInfo.member_id ne null}">
+	                	<div class="navbar-nav mx-auto">
+		                    <div class="dropdown nav-item">
+		                    	<a href="javascript:void(0);">
+			                        <img class="img-fluid w-40px" alt="" src="${userInfo.img_url}">
+			                    </a>
+		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
+			                        <a class="dropdown-item" href="/userInfo">个人信息</a>
+			                        <a class="dropdown-item" href="/logout">退出</a>
+			                    </div>
+		                    </div>
+	                    </div>
+                    </c:when>
+                    <c:otherwise>
+                    	<a class="nav-link" href="javascript:void(0);" role="button" id="dropdown_myaccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        <i class="bi bi-person-circle"></i>
+	                    </a>
+	                    <div class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdown_myaccount">
+	                        <a class="dropdown-item" href="/login">登录</a>
+	                        <a class="dropdown-item" href="/registration">注册</a>
+	                        <a class="dropdown-item" href="/goCart">我的购物车</a>
+	                        <a class="dropdown-item" href="/myOrderList">我的订单</a>
+	                    </div>
+                    </c:otherwise>
+                    </c:choose>
                 </div>
                 <!-- Wishlist -->
                 <div class="nav-item d-none d-xl-block">

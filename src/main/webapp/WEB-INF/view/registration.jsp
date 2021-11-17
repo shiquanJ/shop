@@ -1,84 +1,96 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<!doctype html>
-<html lang="zxx">
-    <head>
+<html>
+	<head>
+    	<title>SGSHOP-注册</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/boxicons.min.css">
-        <link rel="stylesheet" href="assets/css/flaticon.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="icon" type="image/png" href="assets/images/favicon.png">
-        <title>NII代购网-注册</title>
-    </head>
-    <body>
-<!-- header -->
-	<%@include file="../view/common/header.jsp" %>
-<!-- header End -->
-        <div class="page-title-area">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/logo.ico">
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="assets/vendor/fonts/fonts.css">
+        <!-- Bootstrap-icons CSS -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/icons/bootstrap-icons.css">
+        <!--Magnific-Popup CSS -->
+        <link rel="stylesheet" href="assets/vendor/magnific/magnific-popup.css">
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css?v1">
+        
+        <script src="assets/js/sys/registration.js"></script>
+	</head>
+<body>
+	<!-- Header -->
+   	<%@include file="./common/header.jsp" %>
+   	<!-- END Header -->
+   	
+    <!-- Main -->
+    <div class="main">
+        <!-- 注册页面 -->
+        <div class="section">
             <div class="container">
-                <div class="page-title-content">
-                    <h2>Register</h2>
-                    <ul>
-                        <li>
-                            <a href="index">Home </a>
-                        </li>
-                        <li>Pages</li>
-                        <li class="active">Register</li>
-                    </ul>
+                <div class="justify-content-center row">
+                    <div class="col-lg-10 col-xxl-6">
+                        <div class="card">
+                            <div class="card-header bg-transparent py-3">
+                                <h3 class="h4 mb-0">创建账户 </h3>
+                            </div>
+                            <div class="card-body">
+                                <form class="" name="reForm" action="/registration" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                                <label for="name_1" class="form-label">您的姓名<span class="text-danger">*</span></label>
+                                                <input type="text" id="r_name" name="r_name" class="form-control" placeholder="姓名">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                                <label for="email_1" class="form-label">邮箱<span class="text-danger">*</span></label>
+                                                <input type="email" id="r_email" name="r_email" class="form-control" placeholder="邮箱">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                                <label class="form-label col" for="exampleInputPassword_01">密码<span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="r_password" id="exampleInputPassword_01" placeholder="*********">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                                <label class="form-label col" for="exampleInputPassword1">确认密码<span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
+                                        <label class="form-check-label" for="form2Example3"> 我已阅读并接受以下条款：《SGSHOP服务条款》《SGSHOP隐私政策》《SGSHOP支付用户服务协议》 </label>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-primary" id="goRegistration">
+                                                	立即注册
+                                            </button>
+                                        </div>
+                                        <div class="col-12 col-sm text-sm-end mt-3 mt-sm-0">
+                                            <span class="text-muted"> 已拥有账户？  <a href="/login">请登录</a></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="user-area register-area ptb-100">
-            <div class="container">
-                <div class="user-form-content">
-                    <h3>创建账户</h3>
-                    <form class="user-form" name="reForm" action="/amazon/registration" method="post">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>您的姓名</label>
-                                    <input class="form-control" type="text" name="name">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>邮箱地址</label>
-                                    <input class="form-control" type="email" name="r_email">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>密码</label>
-                                    <input class="form-control" type="password" name="r_password">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>再次输入密码</label>
-                                    <input class="form-control" type="password" name="repeat-password">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="default-btn register" type="submit">创建您的账户 </button>
-                            </div>
-                            <div class="col-12">
-                                <p class="create">
-                                                                                                                       已拥有账户？ <a href="/amazon/login">登录</a>
-                                </p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-<!-- footer -->
-	<%@include file="../view/common/footer.jsp" %>
-<!-- footer End -->
-    </body>
+        <!-- end signup -->
+    </div>
+    <!-- End Main -->
+    <!-- Footer -->
+    <%@include file="./common/footer.jsp" %>
+    <!-- End Footer -->
+</body>
+<!-- end body -->
 </html>

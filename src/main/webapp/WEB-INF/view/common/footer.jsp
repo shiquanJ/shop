@@ -1,200 +1,128 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-		<footer class="footer-area pt-100 pb-70">
-            <div class="container">
-                <div class="row">
-                	<div class="col-lg-4 col-md-8">
-                		<div>
-                            <h3>&nbsp;</h3>
-                        </div>
-                	</div>
-                	<div class="col-lg-4 col-md-8">
-                		<div class="single-footer-widget">
-                            <h3><a href="https://beian.miit.gov.cn" style="color: white;">ICP备案号：2021010265</a></h3>
-                        </div>
-                	</div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>了解我们</h3>
-                            <ul class="import-link">
-                                <li>
-                                    <a href="my-account.html">人才招聘</a>
-                                </li>
-                                <li>
-                                    <a href="checkout.html">博客</a>
-                                </li>
-                                <li>
-                                    <a href="wishlist.html">投资者关系</a>
-                                </li>
-                            </ul>
-                        </div>
+<!-- Footer -->
+<footer class="bg-dark footer">
+    <div class="footer-top py-6">
+        <div class="container">
+        	<div class="row">
+            	<!-- <div class="col-lg-4 col-md-8">
+                	<div>
+                        <h3>&nbsp;</h3>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>我的账户</h3>
-                            <ul class="import-link">
-                                <li>
-                                    <a href="my-account.html">我的账户</a>
-                                </li>
-                                <li>
-                                    <a href="checkout.html">我的订单</a>
-                                </li>
-                                <li>
-                                    <a href="wishlist.html">购物车</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">发送与配送</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">退货与换货</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>支付方式</h3>
-                            <ul class="import-link">
-                                <li>
-                                    <a href="#">使用积分购物</a>
-                                </li>
-                                <li>
-                                    <a href="#">账户充值</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>联系我们</h3>
-                            <ul class="address">
-                                <li>
-                                    <span>电话</span>
-                                    <i class="bx bx-phone"></i>
-                                    <a href="tel:+86 18640844669">+86 186-4084-4669</a>
-                                </li>
-                                <li>
-                                    <span>Email</span>
-                                    <i class="bx bx-envelope"></i>
-                                    <a href="/cdn-cgi/l/email-protection#0c65626a634c6065746d226f6361">
-                                        <span class="__cf_email__" data-cfemail="d1b8bfb7be91bdb8a9b0ffb2bebc">[jiangshiquan2020@163.com]</span>
-                                    </a>
-                                </li>
-                                <li class="location">
-                                    <Span>Address</Span>
-                                    <i class="bx bx-location-plus"></i>
-                                    	大连市高新园区雯君庭
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="row mt-30">
-                    <div class="col-lg-3">
-                        <div class="single-widget-bottom">
-                            <h3>Follow Us</h3>
-                            <ul class="social-icon">
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <i class="bx bxl-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                        <i class="bx bxl-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
-                                        <i class="bx bxl-linkedin-square"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/" target="_blank">
-                                        <i class="bx bxl-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-widget-bottom">
-                            <h3>Subscribe Newsletter</h3>
-                            <form class="newsletter-form" data-toggle="validator">
-                                <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
-                                <button class="default-btn" type="submit">
-                                    <i class="bx bxs-send"></i>
-                                    Subscribe 
-                                </button>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-widget-bottom">
-                            <h3>Payment Method</h3>
-                            <ul class="payment">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/payment/card-1.jpg" alt="Image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/payment/card-2.jpg" alt="Image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/payment/card-3.jpg" alt="Image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <img src="assets/images/payment/card-4.jpg" alt="Image">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+               	</div>
+                <div class="col-lg-4 col-md-8">
+                	<div class="single-footer-widget">
+                        <h3><a href="https://beian.miit.gov.cn" style="color: white;">ICP备案号：辽ICP备2021010265号-1</a></h3>
                     </div>
                 </div> -->
             </div>
-        </footer>
-         <div class="copy-right-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>
-                            Copyright <i class="bx bx-copyright"></i>
-                            2021. Designed By <a href="http://www.bootstrapmb.com" target="_blank">姜世权</a>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 my-3">
+                    <div class="pb-3">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo-light.svg" title="" alt="">
+                        </a>
+                    </div>
+                    <address class="white-link mb-4">
+                        <p class="text-white-85 mb-2">辽宁省大连市<br/>高新园区</p>
+                        <p class="mb-2">
+                            <a class="border-bottom border-secondary" href="mailto:jiangshiquan2020@163.com">jiangshiquan2020@163.com</a>
                         </p>
+                        <p class="mb-2">
+                            <a class="border-bottom border-secondary" href="tel:+86 18640844669">tel:+86 186-4084-4669</a>
+                        </p>
+                    </address>
+                    <div class="nav white-link fs-5">
+                        <a class="me-3" href="javascript:void(0);">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="me-3" href="javascript:void(0);">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a class="me-3" href="javascript:void(0);">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="me-3" href="javascript:void(0);">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
                     </div>
-                    <div class="col-lg-6">
-                        <ul class="terms-condition">
-                            <li>
-                                <a href="terms-condition.html">Terms &Condition</a>
-                            </li>
-                            <li>
-                                <a href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-3">
+                    <h6 class="text-white text-uppercase mb-5">我的账户 </h6>
+                    <ul class="list-unstyled white-link footer-link-1 m-0">
+                        <li class="pb-2">
+                            <a href="login.html">登录</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="sign-up.html">我的订单</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="my-account.html">购物车</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="shop.html">发送与配送</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="blog.html">退货与换货</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-3">
+                    <h6 class="text-white text-uppercase mb-5">支付方式 </h6>
+                    <ul class="list-unstyled white-link footer-link-1 m-0">
+                        <li class="pb-2">
+                            <a href="account-address.html">使用积分购物</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="account-profile.html">账户充值</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-3">
+                    <h6 class="text-white text-uppercase mb-5">了解我们 </h6>
+                    <ul class="list-unstyled white-link footer-link-1 m-0">
+                    	<li class="pb-2">
+                        	<a href="my-account.html">人才招聘</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="checkout.html">博客</a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="wishlist.html">投资者关系</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="go-top">
-            <i class="bx bx-chevrons-up"></i>
-            <i class="bx bx-chevrons-up"></i>
+    </div>
+    <div class="footer-bottom py-2 footer-border-top light small">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center py-1">
+                    <p class="m-0 text-white-85">
+                        Copyright,2021 sgshop.top,&nbsp; AllRightsReserved <a href="https://beian.miit.gov.cn" style="color: white;">ICP备案号：辽ICP备2021010265号-1</a>
+                    </p>
+                </div>
+                <!-- <div class="col-md-6 text-center text-md-end py-1">
+                    <img src="assets/img/logo2.png" title="" alt="">
+                </div> -->
+            </div>
         </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/meanmenu.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/form-validator.min.js"></script>
-        <script src="assets/js/contact-form-script.js"></script>
-        <script src="assets/js/ajaxchimp.min.js"></script>
-        <script src="assets/js/range-slider.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/index.js"></script>
+    </div>
+</footer>
+<!-- End Footer -->
+<!-- jquery -->
+    <script src="assets/vendor/appear/jquery-3.5.1.min.js"></script>
+    <!-- appear -->
+    <script src="assets/vendor/appear/jquery.appear.js"></script>
+    <!--bootstrap-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- owl-carousel -->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <!-- magnific -->
+    <script src="assets/vendor/magnific/jquery.magnific-popup.min.js"></script>
+    <!-- isotope -->
+    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <!-- count-down -->
+    <script src="assets/vendor/count-down/jquery.countdown.min.js"></script>
+    <!-- Theme Js -->
+	<script src="assets/vendor/custom/custom.js"></script>

@@ -20198,3 +20198,8 @@ header [data-cart-items]:before {
 .footer-border-top.light {
     border-top: 1px solid rgba(255,255,255,0.1)
 }
+.wechatLogo{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+}
