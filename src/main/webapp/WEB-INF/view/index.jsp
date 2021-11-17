@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="assets/vendor/slick/slick.css">
         <!-- Style CSS -->
         <link rel="stylesheet" href="assets/css/style.css?v1">
+        
+        <script src="assets/js/sys/index.js"></script>
 	</head>
 <body>
 <%@include file="./common/header.jsp" %>

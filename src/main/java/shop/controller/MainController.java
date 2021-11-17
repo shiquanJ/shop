@@ -124,14 +124,17 @@ public class MainController {
 			Map<String, Object> chkLogin = service.chkLogin(map);
 			
 			String member_pwd = (String) chkLogin.get("member_pwd");
-			//有session的时候
+			
 			if(member_pwd != null && member_pwd.equals(r_password)){
 				
 				map.put("member_id", chkLogin.get("member_id"));
 				Map<String, Object> userInfo = service.getUserInfo(map);
 				
+				map.putAll(userInfo);
 				map.put("session_id", req.getSession().getId());
 				map.put("member_ip", "");
+				
+				SessionUtil.setUserInfo(req ,map);
 				
 				mv.addObject("userInfo",userInfo);
 				
@@ -148,6 +151,23 @@ public class MainController {
 			// 访问login 页面 
 			mv.setViewName("/login");
 		}
+		return mv;
+		
+	}
+	
+	//logout
+	@RequestMapping("/logout")
+	public ModelAndView logout(HttpServletRequest req){
+		
+		ModelAndView mv = new ModelAndView();
+		
+		SessionUtil.clearSession(req);
+		
+		//获取main页面信息
+		service.getMainList(mv);
+		
+		mv.setViewName("/index");
+		
 		return mv;
 		
 	}

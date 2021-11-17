@@ -42,34 +42,31 @@
         <div class="modal-content">
             <div class="modal-header bg-primary">
                 <div class="modal-title p-3">
-                    <h5 class="m-0 text-white">Sign in to your account!</h5>
-                    <p class="m-0 text-white">Nice to see you!Please log in with your account.</p>
+                    <h5 class="m-0 text-white text-center">微信扫码登录</h5>
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="w-100 p-3">
                     <!-- Form START -->
-                    <form>
+                    <form name="headerForm" action="/login" method="post">
                         <div class="mb-3">
-                            <label class="form-label" for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+                             <input type="text" id="r_email" name="r_email" class="form-control" placeholder="手机号/邮箱">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+                           <input type="password" class="form-control" id="r_password" name="r_password" placeholder="密码">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+                            <label class="form-check-label" for="exampleCheck1">记住账号</label>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-sm-4">
-                                <button type="submit" class="btn btn-dark">Login</button>
+                                <button type="submit" class="btn btn-dark" id="quick_login">登录</button>
                             </div>
                             <div class="col-sm-8 text-sm-end">
                                 <span class="text-muted">
-                                    Don't have an account? <a href="sign-up.html">Signup here</a>
+                                    	没有账号？ <a href="sign-up.html">马上注册！</a>
                                 </span>
                             </div>
                         </div>
@@ -631,15 +628,15 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo/logo.svg" title="" alt="">
+            <a class="navbar-brand" href="/index">
+                <img class="img-fluid w-60px" src="assets/img/logo.jpg" title="" alt="">
             </a>
             <!-- Logo -->
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="dropdown nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">畅销商品</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <ul class="dropdown-menu list-unstyled left">
                             <li>
@@ -657,7 +654,7 @@
                         </ul>
                     </li>
                     <li class="dropdown nav-item">
-                        <a href="javascript:void(0);" class="nav-link">Pages</a>
+                        <a href="javascript:void(0);" class="nav-link">限时优惠</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <ul class="dropdown-menu left list-unstyled">
                             <li>
@@ -672,7 +669,7 @@
                         </ul>
                     </li>
                     <li class="dropdown dropdown-full nav-item">
-                        <a href="javascript:void(0);" class="nav-link">Shop</a>
+                        <a href="javascript:void(0);" class="nav-link">HOT DEAL</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <div class="dropdown-menu dropdown-menu-lg py-lg-2">
                             <div class="container px-0">
@@ -722,196 +719,11 @@
                         </div>
                     </li>
                     <li class="dropdown dropdown-full nav-item">
-                        <a href="javascript:void(0);" class="nav-link">Categories</a>
+                        <a href="javascript:void(0);" class="nav-link">商品分类</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <div class="dropdown-menu dropdown-mega-menu py-3">
                             <div class="container">
                                 <div class="row g-3">
-                                    <div class="col-sm-6 col-md-4 col-lg-2">
-                                        <div class="hover-scale position-relative mb-3">
-                                            <div class="hover-scale-in">
-                                                <a href="javascript:void(0);">
-                                                    <img src="assets/img/shop-banner-11.jpg" title="" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="pt-2 text-center position-absolute bottom-0 start-0 mb-3">
-                                                <h5 class="m-0 h6 bg-white px-3 py-2">
-                                                    <a class="text-reset link-effect" href="javascript:void(0);">Categories</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <ul class="list-unstyled link-style-1">
-                                            <li>
-                                                <a href="shop.html">Scarf</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shirt</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shoes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shorts</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Summer</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Sunglasses</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Vintage</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-2">
-                                        <div class="hover-scale position-relative mb-3">
-                                            <div class="hover-scale-in">
-                                                <a href="javascript:void(0);">
-                                                    <img src="assets/img/shop-banner-11.jpg" title="" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="pt-2 text-center position-absolute bottom-0 start-0 mb-3">
-                                                <h5 class="m-0 h6 bg-white px-3 py-2">
-                                                    <a class="text-reset link-effect" href="javascript:void(0);">Categories</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <ul class="list-unstyled link-style-1">
-                                            <li>
-                                                <a href="shop.html">Scarf</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shirt</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shoes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shorts</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Summer</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Sunglasses</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Vintage</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-2">
-                                        <div class="hover-scale position-relative mb-3">
-                                            <div class="hover-scale-in">
-                                                <a href="javascript:void(0);">
-                                                    <img src="assets/img/shop-banner-11.jpg" title="" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="pt-2 text-center position-absolute bottom-0 start-0 mb-3">
-                                                <h5 class="m-0 h6 bg-white px-3 py-2">
-                                                    <a class="text-reset link-effect" href="javascript:void(0);">Categories</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <ul class="list-unstyled link-style-1">
-                                            <li>
-                                                <a href="shop.html">Scarf</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shirt</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shoes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shorts</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Summer</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Sunglasses</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Vintage</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-2">
-                                        <div class="hover-scale position-relative mb-3">
-                                            <div class="hover-scale-in">
-                                                <a href="javascript:void(0);">
-                                                    <img src="assets/img/shop-banner-11.jpg" title="" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="pt-2 text-center position-absolute bottom-0 start-0 mb-3">
-                                                <h5 class="m-0 h6 bg-white px-3 py-2">
-                                                    <a class="text-reset link-effect" href="javascript:void(0);">Categories</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <ul class="list-unstyled link-style-1">
-                                            <li>
-                                                <a href="shop.html">Scarf</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shirt</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shoes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shorts</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Summer</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Sunglasses</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Vintage</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-2">
-                                        <div class="hover-scale position-relative mb-3">
-                                            <div class="hover-scale-in">
-                                                <a href="javascript:void(0);">
-                                                    <img src="assets/img/shop-banner-11.jpg" title="" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="pt-2 text-center position-absolute bottom-0 start-0 mb-3">
-                                                <h5 class="m-0 h6 bg-white px-3 py-2">
-                                                    <a class="text-reset link-effect" href="javascript:void(0);">Categories</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <ul class="list-unstyled link-style-1">
-                                            <li>
-                                                <a href="shop.html">Scarf</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shirt</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shoes</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Shorts</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Summer</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Sunglasses</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">Vintage</a>
-                                            </li>
-                                        </ul>
-                                    </div>
                                     <div class="col-sm-6 col-md-4 col-lg-2">
                                         <div class="hover-scale position-relative mb-3">
                                             <div class="hover-scale-in">
@@ -963,7 +775,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown dropdown-full nav-item">
+                    <!-- <li class="dropdown dropdown-full nav-item">
                         <a href="javascript:void(0);" class="nav-link">Account</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <div class="dropdown-menu dropdown-menu-lg py-lg-2">
@@ -1029,7 +841,7 @@
                             <a class="dropdown-item" href="blog.html">Blog</a>
                             <a class="dropdown-item" href="blog-single.html">Blog Single</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- End Menu -->
@@ -1045,6 +857,7 @@
 			                    </a>
 		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
 			                        <a class="dropdown-item" href="/userInfo">个人信息</a>
+			                        <a class="dropdown-item" href="/userAddress">收货地址</a>
 			                        <a class="dropdown-item" href="/logout">退出</a>
 			                    </div>
 		                    </div>
@@ -1072,7 +885,7 @@
                 <!-- Cart -->
                 <div class="nav-item">
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalMiniCart" href="javascript:void(0)">
-                        <span class="" data-cart-items="8">
+                        <span class="" data-cart-items="0">
                             <i class="bi bi-cart"></i>
                         </span>
                     </a>

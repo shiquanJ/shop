@@ -19,4 +19,18 @@ public class SessionUtil {
 		}
 		return map;
 	}
+	
+	public static void setUserInfo(HttpServletRequest request, HashMap map){
+		
+		HttpSession session = request.getSession(true);
+		session.setAttribute("userInfo", map.get("userInfo"));
+		
+	}
+	public static void clearSession(HttpServletRequest request){
+		
+		HttpSession session = request.getSession(true);
+		session.invalidate();
+	}
+	
+	
 }
