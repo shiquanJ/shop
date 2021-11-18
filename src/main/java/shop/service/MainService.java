@@ -22,11 +22,6 @@ public class MainService {
 		mv.addObject("lookbookList", this.getLookBookList());
 		mv.addObject("prdList", this.getPrdList());
 	}
-	public List<HashMap> getUserList(){
-		
-		return dao.getUserList();
-	}
-	
 	public List<HashMap> getBannerList(){
 		
 		return dao.getBannerList();

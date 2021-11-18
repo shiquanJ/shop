@@ -14,15 +14,10 @@ public class MainDao {
 	@Autowired
 	private JdbcUtil jdbc;
 	
-	public List<HashMap> getUserList(){
-		
-		String sql ="SELECT * FROM SG_MEMBER ";
-		return (List)jdbc.getList(sql, null);
-	}
 	//获取 banner 
 	public List<HashMap> getBannerList(){
 		
-		String sql ="SELECT * FROM SG_BANNER WHERE ISUSE='Y'";
+		String sql ="select banner_id, banner_nm, catagory_id, img_url from sg_banner where isuse='Y'";
 		//传空的参数
 		Object[] obj = new Object[]{};
 		
@@ -31,7 +26,7 @@ public class MainDao {
 	//获取lookbook
 	public List<HashMap> getLookBookList(){
 			
-		String sql ="SELECT * FROM SG_LOOKBOOK WHERE ISUSE='Y'";
+		String sql ="select lookbook_id, lookbook_nm, img_url from sg_lookbook where isuse='Y' ";
 		//传空的参数
 		Object[] obj = new Object[]{};
 		try {
@@ -48,7 +43,16 @@ public class MainDao {
 	//获取商品
 	public List<HashMap> getPrdList(){
 		
-		String sql ="SELECT * FROM SG_GOODS WHERE ISUSE='Y' ORDER BY UPDATE_DT DESC";
+		String sql ="SELECT goods_id, goods_name, goods_type"
+				+ "\n		, shop_id, category_id, category_id_1"
+				+ "\n		, category_id_2, category_id_3, brand_id"
+				+ "\n		, promotion_type, promote_id, currency_type"
+				+ "\n		, market_price, price, promotion_price"
+				+ "\n		, cost_price, stock, shipping_fee"
+				+ "\n		, max_buy, clicks, sales"
+				+ "\n		, collects, star, img_url"
+				+ "\n from sg_goods where isuse= 'Y' "
+				+ "\n order by update_dt desc";
 		
 		//传空的参数
 		Object[] obj = new Object[]{};
@@ -65,10 +69,10 @@ public class MainDao {
 	public String getDBPwd(HashMap map){
 		
 		try {
-			String sql ="\n SELECT MEMBER_ID, MEMBER_PWD "
-					+ "\n FROM SG_MEMBER "
-					+ "\n WHERE MEMBER_NAME = ? "
-					+ "\n AND MEMBER_EMAIL = ?";
+			String sql ="\n select member_id, member_pwd "
+					+ "\n from sg_member "
+					+ "\n where member_name = ? "
+					+ "\n and member_email = ?";
 			
 			Object[] obj = new Object[2];
 			obj[0] = map.get("r_name");
@@ -85,9 +89,9 @@ public class MainDao {
 	public Map<String,Object> chkLogin(HashMap map){
 		
 		try {
-			String sql ="\n SELECT MEMBER_ID, MEMBER_PWD "
-					+ "\n FROM SG_MEMBER "
-					+ "\n WHERE MEMBER_EMAIL = ? OR MEMBER_PHONE = ?";
+			String sql ="\n select member_id, member_pwd "
+					+ "\n from sg_member "
+					+ "\n where member_email = ? or member_phone = ?";
 			
 			Object[] obj = new Object[2];
 			obj[0] = map.get("r_email");
@@ -102,7 +106,7 @@ public class MainDao {
 	//注册
 	public int insSG_MEMBER(HashMap map){
 		
-		String sql ="insert INTO  SG_MEMBER (MEMBER_NAME, MEMBER_EMAIL, MEMBER_PWD) VALUES(?,?,?) ";
+		String sql ="insert into sg_member (member_name, member_email, member_pwd) values(?,?,?) ";
 		
 		Object[] obj = new Object[3];
 		obj[0] = map.get("r_name");
@@ -115,7 +119,10 @@ public class MainDao {
 	//获取用户信息
 	public Map<String,Object> getUserInfo(HashMap map){
 		
-		String sql ="SELECT * FROM sg_member WHERE member_id = ?";
+		String sql ="select member_id, member_name,member_pwd, member_email"
+				+ "\n		,member_level, member_label,member_ip"
+				+ "\n		,member_phone, img_url,memo"
+				+ "\n from sg_member where member_id = ?";
 		
 		//传空的参数
 		Object[] obj = new Object[1];

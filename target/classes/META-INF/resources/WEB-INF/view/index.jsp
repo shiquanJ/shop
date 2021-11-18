@@ -20,7 +20,6 @@
         <!-- Style CSS -->
         <link rel="stylesheet" href="assets/css/style.css?v1">
         
-        <script src="assets/js/sys/index.js"></script>
 	</head>
 <body>
 <%@include file="./common/header.jsp" %>
@@ -717,7 +716,7 @@
 <!-- Footer -->
 	<%@include file="./common/footer.jsp" %>
 <!-- END Footer -->
-
+<script src="assets/js/sys/index.js"></script>
 </body>
 <!-- end body -->
 </html>
