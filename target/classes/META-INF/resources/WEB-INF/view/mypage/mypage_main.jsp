@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/logo.ico">
     <!-- Fonts CSS -->
     <link rel="stylesheet" href="assets/vendor/fonts/fonts.css">
     <!-- Bootstrap-icons CSS -->
@@ -25,7 +25,7 @@
    	<%@include file="../common/header.jsp" %>
    	<!-- END Header -->
     <!-- Main -->
-    <div class="main">
+    <div>
         <!-- Table -->
         <div class="py-6 my-account">
             <div class="container">
