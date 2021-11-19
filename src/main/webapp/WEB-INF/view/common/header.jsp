@@ -856,7 +856,7 @@
 			                        <img class="img-fluid w-40px" alt="" src="${userInfo.img_url}">
 			                    </a>
 		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
-			                        <a class="dropdown-item" href="/userInfo">个人信息</a>
+			                        <a class="dropdown-item" href="/mypage">个人信息</a>
 			                        <a class="dropdown-item" href="/userAddress">收货地址</a>
 			                        <a class="dropdown-item" href="/logout">退出</a>
 			                    </div>
