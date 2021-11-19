@@ -1,6 +1,7 @@
 package shop.utils;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -20,10 +21,10 @@ public class SessionUtil {
 		return map;
 	}
 	
-	public static void setUserInfo(HttpServletRequest request, HashMap map){
+	public static void setUserInfo(HttpServletRequest request, Map<String, Object> map){
 		
 		HttpSession session = request.getSession(true);
-		session.setAttribute("userInfo", map.get("userInfo"));
+		session.setAttribute("userInfo", map);
 		
 	}
 	public static void clearSession(HttpServletRequest request){

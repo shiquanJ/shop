@@ -37,26 +37,4 @@ public class MainService {
 		return dao.getPrdList();
 	}
 	
-	//获取DB密码
-	public String getDBPwd(HashMap map){
-		
-		return dao.getDBPwd(map);
-	}
-	
-	//用户注册
-	public int insSG_MEMBER(HashMap map){
-		
-		return dao.insSG_MEMBER(map);
-	}
-	//login的时候 check有没有用户
-	public Map<String,Object> chkLogin(HashMap map){
-		
-		return dao.chkLogin(map);
-	}
-	// 获取用户信息
-	public Map<String,Object> getUserInfo(HashMap map){
-		
-		return dao.getUserInfo(map);
-	}
-	
 }
