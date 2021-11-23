@@ -1,27 +1,4 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>SGSHOP</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/logo.ico">
-        <!-- Fonts CSS -->
-        <link rel="stylesheet" href="assets/vendor/fonts/fonts.css">
-        <!-- Bootstrap-icons CSS -->
-        <link rel="stylesheet" href="assets/vendor/bootstrap/icons/bootstrap-icons.css">
-        <!--Magnific-Popup CSS -->
-        <link rel="stylesheet" href="assets/vendor/magnific/magnific-popup.css">
-        <!-- Slick CSS -->
-        <link rel="stylesheet" href="assets/vendor/slick/slick.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="assets/css/style.css?v1">
-        
-	</head>
-<body>
 <%@include file="./common/header.jsp" %>
 <!-- Header End -->
 <!-- Main -->
@@ -107,12 +84,12 @@
                             </div>
                             <div class="product-media">
                                 <a href="product-details.html">
-                                    <img class="img-fluid" src="${pvo.img_url }" title="" alt="">
+                                    <img class="img-fluid" src="${pvo.img_url}" title="" alt="">
                                 </a>
                                 <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
+                                    <a href="javascript:add_quick_cart('${pvo.goods_id}','${userInfo.member_id}')" class="btn btn-primary btn-sm w-100">
                                         <i class="bi bi-cart"></i>
-                                        Add to cart 
+                                        	添加购物车
                                     </a>
                                 </div>
                             </div>
@@ -716,7 +693,4 @@
 <!-- Footer -->
 	<%@include file="./common/footer.jsp" %>
 <!-- END Footer -->
-<script src="assets/js/sys/index.js"></script>
-</body>
-<!-- end body -->
-</html>
+<script src="${server_url}assets/js/main.js?${js_timer}"></script> 

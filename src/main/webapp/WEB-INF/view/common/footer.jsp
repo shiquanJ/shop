@@ -111,18 +111,21 @@
 </footer>
 <!-- End Footer -->
 <!-- jquery -->
-    <script src="assets/vendor/appear/jquery-3.5.1.min.js"></script>
+    <script src="${server_url}assets/vendor/appear/jquery-3.5.1.min.js"></script>
     <!-- appear -->
-    <script src="assets/vendor/appear/jquery.appear.js"></script>
+    <script src="${server_url}assets/vendor/appear/jquery.appear.js"></script>
     <!--bootstrap-->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="${server_url}assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- owl-carousel -->
-    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="${server_url}assets/vendor/slick/slick.min.js"></script>
     <!-- magnific -->
-    <script src="assets/vendor/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="${server_url}assets/vendor/magnific/jquery.magnific-popup.min.js"></script>
     <!-- isotope -->
-    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="${server_url}assets/vendor/isotope/isotope.pkgd.min.js"></script>
     <!-- count-down -->
-    <script src="assets/vendor/count-down/jquery.countdown.min.js"></script>
+    <script src="${server_url}assets/vendor/count-down/jquery.countdown.min.js"></script>
     <!-- Theme Js -->
-	<script src="assets/vendor/custom/custom.js"></script>
+	<script src="${server_url}assets/vendor/custom/custom.js"></script>
+	</body>
+<!-- end body -->
+</html>

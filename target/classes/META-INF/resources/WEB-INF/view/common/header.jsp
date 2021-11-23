@@ -1,5 +1,32 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SGSHOP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="${server_url}assets/img/logo.ico">
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="${server_url}assets/vendor/fonts/fonts.css?v">
+        <!-- Bootstrap-icons CSS -->
+        <link rel="stylesheet" href="${server_url}assets/vendor/bootstrap/icons/bootstrap-icons.css">
+        <!--Magnific-Popup CSS -->
+        <link rel="stylesheet" href="${server_url}assets/vendor/magnific/magnific-popup.css">
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="${server_url}assets/vendor/slick/slick.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="${server_url}assets/css/style.css?">
+        
+        <script src="${server_url}assets/js/common/common.js?${js_timer}"></script> 
+	</head>
+<body>
+<form name="headForm">
+<input type="hidden" name="member_id" value="${userInfo.member_id}">
+<input type="hidden" name="member_name" value="${userInfo.member_name}">
+</form>
 <!-- Preload -->
 <div id="loading" class="preloader">
     <div class="spinner-border text-primary" role="status">
@@ -36,7 +63,7 @@
     </div>
 </div>
 <!-- Search END -->
-<!-- Login Popup START -->
+<!-- 登录 Popup START -->
 <div class="modal fade" id="topbarlogin">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -49,7 +76,7 @@
             <div class="modal-body">
                 <div class="w-100 p-3">
                     <!-- Form START -->
-                    <form name="headerForm" action="/login" method="post">
+                    <form name="headerForm" action="/user/login" method="post">
                         <div class="mb-3">
                              <input type="text" id="r_email" name="r_email" class="form-control" placeholder="手机号/邮箱">
                         </div>
@@ -76,7 +103,7 @@
         </div>
     </div>
 </div>
-<!-- Login Popup END -->
+<!-- 登录 Popup END -->
 <!-- Mini Cart -->
 <div class="modal px-modal-right fade" id="modalMiniCart" tabindex="-1" role="dialog" aria-hidden="true">
     <!-- Shopping Cart -->
@@ -97,7 +124,7 @@
                             <div class="col-4">
                                 <!-- Image -->
                                 <a href="javascript:void(0);">
-                                    <img class="img-fluid border" src="assets/img/product-2.jpg" alt="...">
+                                    <img class="img-fluid border" src="${server_url}assets/img/product-2.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="col-8">
@@ -629,7 +656,7 @@
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/index">
-                <img class="img-fluid w-60px" src="assets/img/logo.jpg" title="" alt="">
+                <img class="img-fluid w-60px" src="${server_url}assets/img/logo.jpg" title="" alt="">
             </a>
             <!-- Logo -->
             <!-- Menu -->
@@ -853,7 +880,7 @@
 	                	<div class="navbar-nav mx-auto">
 		                    <div class="dropdown nav-item">
 		                    	<a href="javascript:void(0);">
-			                        <img class="img-fluid w-40px" alt="" src="${userInfo.img_url}">
+			                        <img class="img-fluid w-40px" alt="" src="${server_url}${userInfo.img_url}">
 			                    </a>
 		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
 			                        <a class="dropdown-item" href="/mypage">个人信息</a>
@@ -868,7 +895,7 @@
 	                        <i class="bi bi-person-circle"></i>
 	                    </a>
 	                    <div class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdown_myaccount">
-	                        <a class="dropdown-item" href="/login">登录</a>
+	                        <a class="dropdown-item" href="/user/login">登录</a>
 	                        <a class="dropdown-item" href="/registration">注册</a>
 	                        <a class="dropdown-item" href="/goCart">我的购物车</a>
 	                        <a class="dropdown-item" href="/myOrderList">我的订单</a>
@@ -899,3 +926,25 @@
         </div>
     </nav>
 </header>
+<!-- 共同popup -->
+<div class="modal fade" id="popupMsg">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="w-100 p-3">
+                	<div class="row">
+	                 	<span class="alert" id="message" ></span>
+               	    </div>
+                </div>
+                <div class="modal-footer ">
+                  	<div class="">
+                    	<button type="submit" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                   	</div>
+                  	<div class="">
+                    	<button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#topbarlogin">OK</button>
+                   	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,29 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<html>
-	<head>
-    	<title>SGSHOP-注册</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/logo.ico">
-        <!-- Fonts CSS -->
-        <link rel="stylesheet" href="assets/vendor/fonts/fonts.css">
-        <!-- Bootstrap-icons CSS -->
-        <link rel="stylesheet" href="assets/vendor/bootstrap/icons/bootstrap-icons.css">
-        <!--Magnific-Popup CSS -->
-        <link rel="stylesheet" href="assets/vendor/magnific/magnific-popup.css">
-        <!-- Slick CSS -->
-        <link rel="stylesheet" href="assets/vendor/slick/slick.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="assets/css/style.css?v1">
-        
-        <script src="assets/js/sys/registration.js"></script>
-	</head>
-<body>
-	<!-- Header -->
-   	<%@include file="../common/header.jsp" %>
-   	<!-- END Header -->
+<%@include file="../common/header.jsp" %>
    	
     <!-- Main -->
     <div class="main">
@@ -90,7 +66,4 @@
     <!-- End Main -->
     <!-- Footer -->
     <%@include file="../common/footer.jsp" %>
-    <!-- End Footer -->
-</body>
-<!-- end body -->
-</html>
+	<script src="${server_url}assets/js/user/registration.js"></script>

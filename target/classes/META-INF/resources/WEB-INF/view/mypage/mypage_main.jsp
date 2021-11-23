@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-    <!-- Title of The Page -->
-    <title>MyPage</title>
-    <!-- Meta Informations -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo.ico">
-    <!-- Fonts CSS -->
-    <link rel="stylesheet" href="assets/vendor/fonts/fonts.css">
-    <!-- Bootstrap-icons CSS -->
-    <link rel="stylesheet" href="assets/vendor/bootstrap/icons/bootstrap-icons.css">
-    <!--Magnific-Popup CSS -->
-    <link rel="stylesheet" href="assets/vendor/magnific/magnific-popup.css">
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">       
-</head>
-<body>
-   	<!-- Header -->
-   	<%@include file="../common/header.jsp" %>
-   	<!-- END Header -->
+<%@page contentType="text/html; charset=UTF-8" %>
+<%@include file="./common/header.jsp" %>
     <!-- Main -->
     <div>
         <!-- Table -->

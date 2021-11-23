@@ -14,9 +14,14 @@ import org.springframework.web.servlet.ModelAndView;
 import shop.service.MainService;
 import shop.service.user.LoginService;
 import shop.utils.SessionUtil;
+import shop.utils.View;
 
 @Controller
+@RequestMapping("/user")
 public class LoginController {
+	
+    private View mv;
+	
 	@Autowired
 	private LoginService service;
 	
@@ -31,7 +36,7 @@ public class LoginController {
 	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req){
 		
-		ModelAndView mv = new ModelAndView();
+		mv = new View();
 		
 		String r_email = req.getParameter("r_email");
 		String r_password = req.getParameter("r_password");
@@ -80,7 +85,7 @@ public class LoginController {
 	@RequestMapping("/logout")
 	public ModelAndView logout(HttpServletRequest req){
 		
-		ModelAndView mv = new ModelAndView();
+		mv = new View();
 		
 		SessionUtil.clearSession(req);
 		
@@ -97,7 +102,8 @@ public class LoginController {
 	@RequestMapping("/registration")
 	public ModelAndView registration(HttpServletRequest req){
 		
-		ModelAndView mv = new ModelAndView();
+		mv = new View();
+		
 		HttpSession session = req.getSession(true);
 		String gridRadios = req.getParameter("gridRadios");
 		String r_name = req.getParameter("r_name");

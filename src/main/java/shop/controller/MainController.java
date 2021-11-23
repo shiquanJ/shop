@@ -1,8 +1,6 @@
 package shop.controller;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,37 +8,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.paypal.api.payments.Amount;
-import com.paypal.api.payments.Item;
-import com.paypal.api.payments.ItemList;
-import com.paypal.api.payments.Links;
-import com.paypal.api.payments.Payee;
-import com.paypal.api.payments.Payer;
-import com.paypal.api.payments.PayerInfo;
-import com.paypal.api.payments.Payment;
-import com.paypal.api.payments.Phone;
-import com.paypal.api.payments.RedirectUrls;
-import com.paypal.api.payments.RelatedResources;
-import com.paypal.api.payments.Sale;
-import com.paypal.api.payments.ShippingAddress;
-import com.paypal.api.payments.Transaction;
-import com.paypal.base.rest.PayPalRESTException;
-
-import shop.bean.PaypalPaymentIntent;
-import shop.bean.PaypalPaymentMethod;
 import shop.service.MainService;
 import shop.service.PayPalService;
 import shop.service.user.LoginService;
-import shop.utils.URLUtils;
+import shop.utils.View;
 
 @Controller
 @ServletComponentScan("shop.filter")
@@ -48,8 +27,9 @@ import shop.utils.URLUtils;
 public class MainController {
 	public static final String PAYPAL_SUCCESS_URL = "pay/success";
     public static final String PAYPAL_CANCEL_URL = "pay/cancel";
-
-
+    
+    private View mv;
+    
     @Autowired
     private PayPalService paypalService;
 	@Autowired
@@ -63,7 +43,7 @@ public class MainController {
 	
 	@RequestMapping(value={"/","/index"})
 	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){
-		ModelAndView mv = new ModelAndView();
+		mv = new View();
 		
 		HttpSession session = req.getSession(true);
 		
