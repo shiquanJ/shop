@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="../common/common.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -111,7 +111,7 @@
         <div class="modal-content">
             <!-- Header-->
             <div class="modal-header border-bottom">
-                <h6 class="m-0 fw-bold">Your Cart (2)
+                <h6 class="m-0 fw-bold">购物车 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
                     </h6>
                 <!-- Close -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -119,19 +119,20 @@
             <div class="modal-body">
                 <!-- List group -->
                 <ul class="list-unstyled m-0 p-0">
-                    <li class="py-3 border-bottom">
+                	<c:forEach items="${cartList}" var="cvo">
+                	<li class="py-3 border-bottom">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <!-- Image -->
                                 <a href="javascript:void(0);">
-                                    <img class="img-fluid border" src="${server_url}assets/img/product-2.jpg" alt="...">
+                                    <img class="img-fluid border" src="${cvo.img_url}" alt="...">
                                 </a>
                             </div>
                             <div class="col-8">
                                 <!-- Title -->
                                 <p class="mb-2">
-                                    <a class="text-dark fw-500" href="javascript:void(0);">Cotton floral print Dress</a>
-                                    <span class="m-0 text-muted w-100 d-block">$40.00</span>
+                                    <a class="text-dark fw-500" href="javascript:void(0);">${cvo.goods_name }</a>
+                                    <span class="m-0 text-muted w-100 d-block">JP&yen;${cvo.price }</span>
                                 </p>
                                 <!--Footer -->
                                 <div class="d-flex align-items-center">
@@ -144,45 +145,13 @@
                                     <!-- Remove -->
                                     <a class="small text-dark ms-auto" href="#!">
                                         <i class="bi bi-x"></i>
-                                        Remove
-                                        
+                                       	 删除
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="py-3 border-bottom">
-                        <div class="row align-items-center">
-                            <div class="col-4">
-                                <!-- Image -->
-                                <a href="javascript:void(0);">
-                                    <img class="img-fluid border" src="assets/img/product-2.jpg" alt="...">
-                                </a>
-                            </div>
-                            <div class="col-8">
-                                <!-- Title -->
-                                <p class="mb-2">
-                                    <a class="text-dark fw-500" href="javascript:void(0);">Cotton floral print Dress</a>
-                                    <span class="m-0 text-muted w-100 d-block">$40.00</span>
-                                </p>
-                                <!--Footer -->
-                                <div class="d-flex align-items-center">
-                                    <!-- Select -->
-                                    <select class="form-select form-select-sm w-auto">
-                                        <option value="1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="1">3</option>
-                                    </select>
-                                    <!-- Remove -->
-                                    <a class="small text-dark ms-auto" href="#!">
-                                        <i class="bi bi-x"></i>
-                                        Remove
-                                        
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    </li>	
+                	</c:forEach>
                 </ul>
             </div>
             <!-- Footer -->
@@ -910,9 +879,9 @@
                     </a>
                 </div>
                 <!-- Cart -->
-                <div class="nav-item">
+                <div class="nav-item quick_cart">
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalMiniCart" href="javascript:void(0)">
-                        <span class="" data-cart-items="0">
+                        <span class="quick_cart_cnt" data-cart-items="${cfn:length(cartList)}">
                             <i class="bi bi-cart"></i>
                         </span>
                     </a>
@@ -926,6 +895,28 @@
         </div>
     </nav>
 </header>
+<!-- loginpopup -->
+<div class="modal fade" id="loginPopupMsg">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="w-100 p-3">
+                	<div class="row">
+	                 	<span class="alert" id="message" ></span>
+               	    </div>
+                </div>
+                <div class="modal-footer ">
+                  	<div class="">
+                    	<button type="submit" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                   	</div>
+                  	<div class="">
+                    	<button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#topbarlogin">OK</button>
+                   	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- 共同popup -->
 <div class="modal fade" id="popupMsg">
     <div class="modal-dialog modal-dialog-centered">

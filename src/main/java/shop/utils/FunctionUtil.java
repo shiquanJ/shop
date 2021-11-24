@@ -20,13 +20,10 @@ public class FunctionUtil {
 		return  dateFormat.format(cal.getTime());
 	}
 	
-	public static String strNvl(Object obj){
-		String str ="";
-		if(obj == null){
-			return str;
-		}else{
-			return (String)obj;
-		}
+	// 获取String 
+	public static String getStrVal(String str){
+		if(str == null || "".equals(str))return "";
+		return str.trim();
 	}
 	
 	

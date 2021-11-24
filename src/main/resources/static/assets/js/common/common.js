@@ -12,3 +12,8 @@ function popupMessage(str){
 	$("#message").html(str);
 	$("#popupMsg").modal("toggle");
 }
+function loginPopupMessage(str){
+	//赋值
+	$("#message").html(str);
+	$("#loginPopupMsg").modal("toggle");
+}

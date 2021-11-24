@@ -5,23 +5,26 @@ $(function(){
 	headerfrm = $('input[name="headerfrm"]').val();
 });
 
-function add_quick_cart(str1,str2){
+function add_quick_cart(goods_id,member_id){
 	if(!isLogin()){
-		popupMessage('请先登录~');
+		loginPopupMessage('请先登录~');
 		return;
 	}
 	$.ajax({
-		url: '/cart/addCart_Ajax',
-		type: 'post',
+		url: "/cart/addCart_Ajax",
+		type: "post",
 		async: true, //异步
 		data: {
-			goods_id : str1,
-			member_id: str2
+			goods_id : goods_id,
+			member_id: member_id
 			
 		},
-		dataType: 'json',
+		dataType: "json",
 		success:function(data){
-			console.log(data);
+			popupMessage("添加成功");
+			var len = data.length;
+			//右上角购物车小图标count显示
+			$(".quick_cart_cnt").attr("data-cart-items",len);
 		},
 		fail: function(data){
 			console.log(data);
@@ -32,5 +35,28 @@ function addEvt(){
 	$('#quick_login').unbind('click').click(function(event){
 		headerfrm.submit();
 	});
-	
+	$('.quick_cart').unbind('click').click(function(event){
+		if(!isLogin()){
+			loginPopupMessage('请先登录~');
+			return;
+		}
+		
+		var member_id = $("input[name='member_id']").val();
+		
+		$.ajax({
+			url: "/cart/getCartList_Ajax",
+			type: "post",
+			async: true, //异步
+			data: {
+				member_id: member_id
+			},
+			dataType: "json",
+			success:function(data){
+				
+			},
+			fail: function(data){
+				console.log(data);
+			}
+		});
+	});
 }

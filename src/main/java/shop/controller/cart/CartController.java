@@ -25,10 +25,11 @@ public class CartController {
     @Autowired
     private cartService service;
     
+    
+    // call ajax 
 	@RequestMapping("/addCart_Ajax")
 	@ResponseBody
-	public ModelAndView addCart_Ajax(HttpServletRequest req, HttpServletResponse res){
-		mv = new View();
+	public List<HashMap> addCart_Ajax(HttpServletRequest req, HttpServletResponse res){
 		
 		String goods_id = req.getParameter("goods_id");
 		String member_id = req.getParameter("member_id");
@@ -36,17 +37,16 @@ public class CartController {
 		HashMap map = new HashMap();
 		map.put("goods_id", goods_id);
 		map.put("member_id", member_id);
+		//商品信息
 		Map<String, Object> prdInfo = service.getPrdInfo(map);
 		
 		map.putAll(prdInfo);
 		
+		//加入购物车
 		int insCart = service.insCart(map);
-		
+		//获取购物车的商品信息
 		List<HashMap> cartList = service.getCartList(map);
 		
-		mv.addObject("cartList", cartList);
-		
-		mv.setViewName("json");
-		return mv;
+		return cartList;
 	}
 }

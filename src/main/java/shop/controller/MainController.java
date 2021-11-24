@@ -1,6 +1,7 @@
 package shop.controller;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -41,7 +42,7 @@ public class MainController {
 		SpringApplication.run(MainController.class, args);
 	}
 	
-	@RequestMapping(value={"/","/index"})
+	@RequestMapping(value={"/","/main"})
 	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){
 		mv = new View();
 		
@@ -49,8 +50,19 @@ public class MainController {
 		
 		if(session != null){
 			System.out.println("session::"+session.getId());
-			HashMap map = new HashMap();
-			map.put("session_id", session.getId());
+			Map<String, Object> userInfo = (Map)session.getAttribute("userInfo");
+			if(userInfo != null){
+				mv.addObject("userInfo", userInfo);
+				HashMap map = new HashMap();
+				map.put("member_id", userInfo.get("member_id"));
+				//获取cart_list
+				List<HashMap> cartList = service.getCartList(map);
+				mv.addObject("cartList", cartList);
+			}else{
+				session.invalidate();
+			}
+			
+			/*map.put("session_id", session.getId());
 			//check session值
 			int cnt = loginService.chkLoginSession(map);
 			if(cnt > 0){
@@ -58,7 +70,7 @@ public class MainController {
 				mv.addObject("userInfo", userInfo);
 			}else{
 				session.invalidate();
-			}
+			}*/
 		}
 		
 		//获取main页面信息
