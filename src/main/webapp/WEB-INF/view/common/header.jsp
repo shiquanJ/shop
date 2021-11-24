@@ -885,7 +885,7 @@
 		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
 			                        <a class="dropdown-item" href="/mypage">个人信息</a>
 			                        <a class="dropdown-item" href="/userAddress">收货地址</a>
-			                        <a class="dropdown-item" href="/logout">退出</a>
+			                        <a class="dropdown-item" href="/user/logout">退出</a>
 			                    </div>
 		                    </div>
 	                    </div>
@@ -896,7 +896,7 @@
 	                    </a>
 	                    <div class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdown_myaccount">
 	                        <a class="dropdown-item" href="/user/login">登录</a>
-	                        <a class="dropdown-item" href="/registration">注册</a>
+	                        <a class="dropdown-item" href="/user/registration">注册</a>
 	                        <a class="dropdown-item" href="/goCart">我的购物车</a>
 	                        <a class="dropdown-item" href="/myOrderList">我的订单</a>
 	                    </div>

@@ -13,7 +13,7 @@
                                 <h3 class="h4 mb-0">创建账户 </h3>
                             </div>
                             <div class="card-body">
-                                <form class="" name="reForm" action="/registration" method="post">
+                                <form class="" name="reForm" action="/user/registration" method="post">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group mb-3">

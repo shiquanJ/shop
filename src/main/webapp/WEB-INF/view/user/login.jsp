@@ -18,7 +18,7 @@
                         		</div>
                         	</div>
                             <div class="card-body">
-                                <form class="" name="reForm" action="/login" method="post">
+                                <form class="" name="reForm" action="/user/login" method="post">
                                     <div class="form-group mb-3">
                                         <input type="text" id="r_email" name="r_email" class="form-control" placeholder="手机号/邮箱">
                                     </div>

@@ -8,20 +8,25 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import shop.utils.View;
+import shop.service.MainService;
+import shop.service.mypage.MypageService;
 
 @Controller
 public class MypageController {
+	@Autowired
+	private MypageService mypageService;
+	
 	//注入service
 	 /*@Autowired
 	 private MypageService Service;*/
-    private View mv;
-	
 	@RequestMapping("/mypage")
-	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){
-		
-		mv = new View();
+	public ModelAndView main(HttpServletRequest req, HttpServletResponse res){	
+		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/mypage_main");
+		
+		//获取main页面信息
+		mypageService.getMypageList(mv);
+		
 		return mv;
 	}
 }
