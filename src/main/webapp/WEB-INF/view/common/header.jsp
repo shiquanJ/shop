@@ -18,7 +18,7 @@
         <!-- Slick CSS -->
         <link rel="stylesheet" href="${server_url}assets/vendor/slick/slick.css">
         <!-- Style CSS -->
-        <link rel="stylesheet" href="${server_url}assets/css/style.css?">
+        <link rel="stylesheet" href="${server_url}assets/css/style.css">
         
         <script src="${server_url}assets/js/common/common.js?${js_timer}"></script> 
 	</head>
@@ -104,88 +104,19 @@
     </div>
 </div>
 <!-- 登录 Popup END -->
-<!-- Mini Cart -->
+<!-- quick Cart -->
 <div class="modal px-modal-right fade" id="modalMiniCart" tabindex="-1" role="dialog" aria-hidden="true">
     <!-- Shopping Cart -->
     <div class="modal-dialog px-modal-vertical">
         <div class="modal-content">
             <!-- Header-->
             <div class="modal-header border-bottom">
-                <h6 class="m-0 fw-bold">购物车 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
+                <h6 class="m-0 fw-bold">商品 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
                     </h6>
                 <!-- Close -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!-- List group -->
-                <ul class="list-unstyled m-0 p-0">
-                	<c:forEach items="${cartList}" var="cvo">
-                	<li class="py-3 border-bottom">
-                        <div class="row align-items-center">
-                            <div class="col-4">
-                                <!-- Image -->
-                                <a href="javascript:void(0);">
-                                    <img class="img-fluid border" src="${cvo.img_url}" alt="...">
-                                </a>
-                            </div>
-                            <div class="col-8">
-                                <!-- Title -->
-                                <p class="mb-2">
-                                    <a class="text-dark fw-500" href="javascript:void(0);">${cvo.goods_name }</a>
-                                    <span class="m-0 text-muted w-100 d-block">JP&yen;${cvo.price }</span>
-                                </p>
-                                <!--Footer -->
-                                <div class="d-flex align-items-center">
-                                    <!-- Select -->
-                                    <select class="form-select form-select-sm w-auto">
-                                        <option value="1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="1">3</option>
-                                    </select>
-                                    <!-- Remove -->
-                                    <a class="small text-dark ms-auto" href="#!">
-                                        <i class="bi bi-x"></i>
-                                       	 删除
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>	
-                	</c:forEach>
-                </ul>
-            </div>
-            <!-- Footer -->
-            <div class="mt-auto p-3 pt-0">
-                <div class="row g-0 py-2">
-                    <div class="col-8">
-                        <span class="text-dark">Subtotal</span>
-                    </div>
-                    <div class="col-4 text-end">
-                        <span class="ml-auto">$89.00</span>
-                    </div>
-                </div>
-                <div class="row g-0 py-2">
-                    <div class="col-8">
-                        <span class="text-dark">Taxes:</span>
-                    </div>
-                    <div class="col-4 text-end">
-                        <span class="ml-auto">$89.00</span>
-                    </div>
-                </div>
-                <div class="row g-0 pt-2 mt-2 border-top fw-bold text-dark">
-                    <div class="col-8">
-                        <span class="text-dark">Subtotal</span>
-                    </div>
-                    <div class="col-4 text-end">
-                        <span class="ml-auto">$89.00</span>
-                    </div>
-                </div>
-                <div class="pt-4">
-                    <a class="btn btn-block btn-dark w-100 mb-3" href="checkout.html">Continue to Checkout</a>
-                    <a class="btn btn-block btn-outline-dark w-100" href="/goCart">购物车</a>
-                </div>
-            </div>
-            <!-- Buttons -->
+            <div class="modal-body" id="quick_cart_list"></div>
         </div>
     </div>
 </div>
@@ -896,13 +827,13 @@
     </nav>
 </header>
 <!-- loginpopup -->
-<div class="modal fade" id="loginPopupMsg">
+<div class="modal fade" id="confirmPopup">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
                 <div class="w-100 p-3">
                 	<div class="row">
-	                 	<span class="alert" id="message" ></span>
+	                 	<span class="alert" id="confirmMessage" ></span>
                	    </div>
                 </div>
                 <div class="modal-footer ">
@@ -910,7 +841,7 @@
                     	<button type="submit" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                    	</div>
                   	<div class="">
-                    	<button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#topbarlogin">OK</button>
+                    	<button type="submit" class="btn btn-outline-secondary reFunction" data-bs-dismiss="modal" aria-label="Close">OK</button>
                    	</div>
                 </div>
             </div>
@@ -918,7 +849,7 @@
     </div>
 </div>
 <!-- 共同popup -->
-<div class="modal fade" id="popupMsg">
+<div class="modal fade" id="popup">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
@@ -929,10 +860,7 @@
                 </div>
                 <div class="modal-footer ">
                   	<div class="">
-                    	<button type="submit" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                   	</div>
-                  	<div class="">
-                    	<button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#topbarlogin">OK</button>
+                    	<button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">OK</button>
                    	</div>
                 </div>
             </div>

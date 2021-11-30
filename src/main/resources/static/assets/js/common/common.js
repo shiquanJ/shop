@@ -10,10 +10,12 @@ function isLogin(){
 function popupMessage(str){
 	//赋值
 	$("#message").html(str);
-	$("#popupMsg").modal("toggle");
+	$("#popup").modal("toggle");
 }
-function loginPopupMessage(str){
+function confirmPopupMessage(str, reFunction){
 	//赋值
-	$("#message").html(str);
-	$("#loginPopupMsg").modal("toggle");
+	$("#confirmMessage").html(str);
+	$("#confirmPopup").modal("toggle");
+	
+	$("#confirmPopup").find(".reFunction").attr('onclick',reFunction);
 }
