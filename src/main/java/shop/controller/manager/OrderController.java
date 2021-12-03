@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import shop.bean.Message;
-import shop.bean.Order;
 import shop.service.manager.OrderService;
 import shop.utils.AJAXResult;
 import shop.utils.PageHelper;
@@ -37,7 +35,7 @@ public class OrderController {
 		map.put("start", (pageNo-1) * ShopConstants.LIST_SIZE);
 		map.put("size", ShopConstants.LIST_SIZE);
 		
-		List<Order> list = service.getOrderList(map);
+		List list = service.getOrderList(map);
 		int totalsize = service.getOrderCount(map);
 		
 		int totalNo = 0;
@@ -47,7 +45,7 @@ public class OrderController {
 			totalNo = totalsize / ShopConstants.LIST_SIZE + 1;
 		}
 		
-		PageHelper<Order> pageHelper = new PageHelper<Order>();
+		PageHelper pageHelper = new PageHelper();
 		pageHelper.setDatas(list);
 		pageHelper.setTotalNo(totalNo);
 		pageHelper.setTotalSize(totalsize);
