@@ -32,7 +32,7 @@ public class OrderController {
 	public Object data(@RequestParam(value = "pageNo", defaultValue = "1") Integer pageNo){
 		
 		Map<String, Object> map = new HashMap<>();
-		map.put("start", (pageNo-1) * ShopConstants.LIST_SIZE);
+		map.put("start", (pageNo - 1) * ShopConstants.LIST_SIZE);
 		map.put("size", ShopConstants.LIST_SIZE);
 		
 		List list = service.getOrderList(map);
