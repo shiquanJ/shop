@@ -80,6 +80,8 @@ public class LoginController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		mv.addObject("pagenm", "登录");
 		return mv;
 		
 	}
@@ -159,6 +161,7 @@ public class LoginController {
 			// TODO: handle exception
 		}
 		
+		mv.addObject("pagenm", "注册");
 		return mv;
 		
 	}

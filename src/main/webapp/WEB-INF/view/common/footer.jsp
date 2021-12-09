@@ -110,22 +110,5 @@
     </div>
 </footer>
 <!-- End Footer -->
-<!-- jquery -->
-    <script src="${server_url}assets/vendor/appear/jquery-3.5.1.min.js"></script>
-    <!-- appear -->
-    <script src="${server_url}assets/vendor/appear/jquery.appear.js"></script>
-    <!--bootstrap-->
-    <script src="${server_url}assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- owl-carousel -->
-    <script src="${server_url}assets/vendor/slick/slick.min.js"></script>
-    <!-- magnific -->
-    <script src="${server_url}assets/vendor/magnific/jquery.magnific-popup.min.js"></script>
-    <!-- isotope -->
-    <script src="${server_url}assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    <!-- count-down -->
-    <script src="${server_url}assets/vendor/count-down/jquery.countdown.min.js"></script>
-    <!-- Theme Js -->
-	<script src="${server_url}assets/vendor/custom/custom.js"></script>
 	</body>
-<!-- end body -->
 </html>

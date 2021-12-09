@@ -3,27 +3,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SGSHOP</title>
+        <title>${pagenm}</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="${server_url}assets/img/logo.ico">
-        <!-- Fonts CSS -->
-        <link rel="stylesheet" href="${server_url}assets/vendor/fonts/fonts.css?v">
-        <!-- Bootstrap-icons CSS -->
-        <link rel="stylesheet" href="${server_url}assets/vendor/bootstrap/icons/bootstrap-icons.css">
-        <!--Magnific-Popup CSS -->
-        <link rel="stylesheet" href="${server_url}assets/vendor/magnific/magnific-popup.css">
-        <!-- Slick CSS -->
-        <link rel="stylesheet" href="${server_url}assets/vendor/slick/slick.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="${server_url}assets/css/style.css">
-        
-        <script src="${server_url}assets/js/common/common.js?${js_timer}"></script> 
+
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../assets/img/logo.ico">
+		<!-- Fonts CSS -->
+		<link rel="stylesheet" href="../assets/vendor/fonts/fonts.css?v">
+		<!-- Bootstrap-icons CSS -->
+		<link rel="stylesheet" href="../assets/vendor/bootstrap/icons/bootstrap-icons.css">
+		<!--Magnific-Popup CSS -->
+		<link rel="stylesheet" href="../assets/vendor/magnific/magnific-popup.css">
+		<!-- Slick CSS -->
+		<link rel="stylesheet" href="../assets/vendor/slick/slick.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="../assets/css/style.css?${js_timer}">
+		
+		<script src="../assets/js/common/common.js?${js_timer}"></script> 
+		
+		<!-- jquery -->
+		<script src="../assets/vendor/appear/jquery-3.5.1.min.js"></script>
+		<!-- appear -->
+		<script src="../assets/vendor/appear/jquery.appear.js"></script>
+		<!--bootstrap-->
+		<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- owl-carousel -->
+		<script src="../assets/vendor/slick/slick.min.js"></script>
+		<!-- magnific -->
+		<script src="../assets/vendor/magnific/jquery.magnific-popup.min.js"></script>
+		<!-- isotope -->
+		<script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
+		<!-- count-down -->
+		<script src="../assets/vendor/count-down/jquery.countdown.min.js"></script>
+		<!-- Theme Js -->
+		<script src="../assets/vendor/custom/custom.js"></script>
+		
+		<script src="../assets/js/cart/cart.js?${js_timer}"></script>
+
 	</head>
+</html>
 <body>
-<form name="headForm">
+<form id="headForm" name="headForm">
 <input type="hidden" name="member_id" value="${userInfo.member_id}">
 <input type="hidden" name="member_name" value="${userInfo.member_name}">
 </form>
@@ -109,6 +131,7 @@
     <!-- Shopping Cart -->
     <div class="modal-dialog px-modal-vertical">
         <div class="modal-content">
+
             <!-- Header-->
             <div class="modal-header border-bottom">
                 <h6 class="m-0 fw-bold">商品 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
@@ -116,7 +139,9 @@
                 <!-- Close -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body" id="quick_cart_list"></div>
+
         </div>
     </div>
 </div>
@@ -475,7 +500,7 @@
                         <li class="nav-item me-3 text-white-85">
                             <span>
                                 <i class="bi bi-clock me-2"></i>
-                                	开发一下现在时间
+                                <a href="#" id="addrMap">地图测试</a>
                             </span>
                         </li>
                         <li class="nav-item">
@@ -555,8 +580,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="/index">
-                <img class="img-fluid w-60px" src="${server_url}assets/img/logo.jpg" title="" alt="">
+            <a class="navbar-brand" href="/main">
+                <img class="img-fluid w-60px" src="../assets/img/logo.jpg" title="" alt="">
             </a>
             <!-- Logo -->
             <!-- Menu -->
@@ -780,7 +805,7 @@
 	                	<div class="navbar-nav mx-auto">
 		                    <div class="dropdown nav-item">
 		                    	<a href="javascript:void(0);">
-			                        <img class="img-fluid w-40px" alt="" src="${server_url}${userInfo.img_url}">
+			                        <img class="img-fluid w-40px" alt="" src="../${userInfo.img_url}">
 			                    </a>
 		                    	<div class="dropdown-menu left shadow-lg" aria-labelledby="dropdown_myaccount">
 			                        <a class="dropdown-item" href="/mypage">个人信息</a>
@@ -812,7 +837,7 @@
                 <!-- Cart -->
                 <div class="nav-item quick_cart">
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalMiniCart" href="javascript:void(0)">
-                        <span class="quick_cart_cnt" data-cart-items="${cfn:length(cartList)}">
+                        <span class="quick_cart_cnt" data-cart-items="${cart_size}">
                             <i class="bi bi-cart"></i>
                         </span>
                     </a>

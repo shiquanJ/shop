@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import shop.service.cart.cartService;
+import shop.service.cart.CartService;
 import shop.utils.View;
 
 @Controller
@@ -25,7 +25,7 @@ public class CartController {
     private View mv;
     
     @Autowired
-    private cartService service;
+    private CartService service;
     
     
     // 添加购物车
@@ -49,8 +49,9 @@ public class CartController {
 		//获取购物车的商品信息
 		List<Map<String,Object>> cartList = service.getCartList(map);
 		
-		return String.valueOf(cartList.size());
-	}
+
+		return cartList;
+
 	// 获取购物车list
 	@RequestMapping("/getCartList_ajax")
 	public ModelAndView getCartList_Ajax(HttpServletRequest req, HttpServletResponse res){
@@ -116,8 +117,10 @@ public class CartController {
 	// 删除购物车
 	@RequestMapping("/delCart_ajax")
 	@ResponseBody
-	public String delCart_ajax(HttpServletRequest req, HttpServletResponse res){
-		String result = "fail";
+
+	public HashMap delCart_ajax(HttpServletRequest req, HttpServletResponse res){
+		HashMap resMap = new HashMap();
+		
 		String cart_id = req.getParameter("cart_id");
 		String member_id = req.getParameter("member_id");
 		String goods_id = req.getParameter("goods_id");
@@ -130,9 +133,15 @@ public class CartController {
 		//加减商品数量
 		int del = service.updCartDel(map);
 		
+
+		List<Map<String,Object>> cartList = service.getCartList(map);
+		
+		resMap.put("list_cnt", cartList.size());
 		if(del > 0){
-			result = "success";
+			resMap.put("status", "success");
+		}else{
+			resMap.put("status", "fail");
 		}
-		return result;
+		return resMap;
 	}
 }

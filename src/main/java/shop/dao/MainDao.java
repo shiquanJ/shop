@@ -17,7 +17,7 @@ public class MainDao {
 	//获取 banner 
 	public List<HashMap> getBannerList(){
 		
-		String sql ="select banner_id, banner_nm, catagory_id, img_url from sg_banner where isuse='Y'";
+		String sql ="select banner_nm, banner_nm, catagory_id, img_url from sg_banner where isuse='Y'";
 		//传空的参数
 		Object[] obj = new Object[]{};
 		
@@ -45,10 +45,10 @@ public class MainDao {
 		
 		String sql ="SELECT goods_id, goods_name, goods_type"
 				+ "\n		, shop_id, category_id, category_id_1"
-				+ "\n		, category_id_2, category_id_3, brand_id"
+				+ "\n		, category_id_2, category_id_3, brand_name"
 				+ "\n		, promotion_type, promote_id, currency_type"
 				+ "\n		, market_price, price, promotion_price"
-				+ "\n		, cost_price, stock, shipping_fee"
+				+ "\n		, stock, shipping_fee"
 				+ "\n		, max_buy, clicks, sales"
 				+ "\n		, collects, star, img_url"
 				+ "\n from sg_goods where isuse= 'Y' "
