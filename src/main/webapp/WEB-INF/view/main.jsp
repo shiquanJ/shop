@@ -1,8 +1,15 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@include file="./common/common.jsp" %>
 <%@include file="./common/header.jsp" %>
+
 <!-- Header End -->
 <!-- Main -->
+<form id="form" name="form" method="post">
+	<input type="hidden" name="member_id" value="${userInfo.member_id}">
+	<input type="hidden" name="member_name" value="${userInfo.member_name}">
+	<input type="hidden" name="goods_id">
+	<input type="hidden" name="cart_size" value="${cart_size}">
+	
+</form>
 <div class="main">
     <!-- Home Slider -->
     <div class="slick-carousel slick-nav-rounded" data-slick='{
@@ -84,11 +91,11 @@
                                 </a>
                             </div>
                             <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="${pvo.img_url}" title="" alt="">
+                                <a href="javascript:shop_prd_view('${pvo.goods_id}')">
+                                    <img class="img-list" src="${pvo.img_url}" title="" alt="">
                                 </a>
                                 <div class="product-cart-btn">
-                                    <a href="javascript:add_quick_cart('${pvo.goods_id}','${userInfo.member_id}')" class="btn btn-primary btn-sm w-100">
+                                    <a href="javascript:add_quick_cart('${pvo.goods_id}')" class="btn btn-primary btn-sm w-100">
                                         <i class="bi bi-cart"></i>
                                         	添加购物车
                                     </a>
@@ -166,19 +173,18 @@
         </div>
     </section>
     <!-- End call to action -->
-    <!-- Product section -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center section-heading">
-                <div class="col-lg-6 text-center">
-                    <h3 class="h2 mb-2">Shop The Collection</h3>
-                    <p class="fs-6 m-0">Read Today’s News.</p>
+    <!-- 热销商品 -->
+        <section class="section bg-gray-100">
+            <div class="container">
+                <div class="row justify-content-center mb-4 mb-lg-6">
+                    <div class="col-lg-6 text-center">
+                        <h3 class="h2 mb-2">热销商品</h3>
+                        <p class="fs-6 m-0">猜您喜欢</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slick-carousel slick-nav-dark" data-slick='{
+                <div class="slick-carousel slick-nav-dark" data-slick='{
                     "slidesToShow": 4,
                     "slidesToScroll": 1,
-                    "centerMode": false,
                     "focusOnSelect": true,
                     "infinite": false,
                     "responsive": [
@@ -207,340 +213,62 @@
                             }
                         }
                     ]
-                    }'>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-1.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-2.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-3.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-4.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-5.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="product-card-1">
-                        <div class="product-card-image">
-                            <div class="badge-ribbon">
-                                <span class="badge bg-danger">Sale</span>
-                            </div>
-                            <div class="product-action">
-                                <a href="wishlist.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-heart"></i>
-                                </a>
-                                <a href="shop-compare.html" class="btn btn-outline-primary">
-                                    <i class="bi bi-arrow-left-right"></i>
-                                </a>
-                                <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
-                                    <i class="bi bi-eye-fill"></i>
-                                </a>
-                            </div>
-                            <div class="product-media">
-                                <a href="product-details.html">
-                                    <img class="img-fluid" src="assets/img/product-6.jpg" title="" alt="">
-                                </a>
-                                <div class="product-cart-btn">
-                                    <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
-                                        <i class="bi bi-cart"></i>
-                                        Add to cart 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-meta small">
-                                <a href="shop-fw-without-filtres.html">Clothing</a>
-                                ,<a href="shop-fw-without-filtres.html">Men</a>
-                            </div>
-                            <div class="rating-star text">
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star-fill active"></i>
-                                <i class="bi bi-star"></i>
-                            </div>
-                            <h6 class="product-title">
-                                <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
-                            </h6>
-                            <div class="product-price">
-                                <span class="text-primary">
-                                    $28.<small>50</small>
-                                </span>
-                                <del class="fs-sm text-muted">
-                                    $38.<small>50</small>
-                                </del>
-                            </div>
-                        </div>
-                    </div>
+                }'>
+                	<c:forEach items="${optProList }" var="ovo">
+	                    <div class="p-2">
+	                        <div class="product-card-1">
+	                            <div class="product-card-image">
+	                                <div class="badge-ribbon">
+	                                    <span class="badge bg-danger">HOT</span>
+	                                </div>
+	                                <div class="product-action">
+	                                    <a href="wishlist.html" class="btn btn-outline-primary">
+	                                        <i class="bi bi-heart"></i>
+	                                    </a>
+	                                     <a href="shop-compare.html" class="btn btn-outline-primary">
+	                                        <i class="bi bi-arrow-left-right"></i>
+	                                    </a>
+	                                    <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+	                                        <i class="bi bi-eye-fill"></i>
+	                                    </a>
+	                                </div>
+	                                <div class="product-media">
+	                                    <a href="product-details.html">
+	                                        <img class="img-detail-h200" src="${ovo.img_url }" title="" alt="">
+	                                    </a>
+	                                    <div class="product-cart-btn">
+	                                         <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
+	                                            <i class="bi bi-cart"></i>
+	                                            	添加购物车
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="product-card-info">
+	                                <div class="product-meta small">
+	                                    <a href="shop-fw-without-filtres.html">Clothing</a>, <a href="shop-fw-without-filtres.html">Men</a>
+	                                </div>
+	                                <div class="rating-star text">
+	                                    <i class="bi bi-star-fill active"></i>
+	                                    <i class="bi bi-star-fill active"></i>
+	                                    <i class="bi bi-star-fill active"></i>
+	                                    <i class="bi bi-star-fill active"></i>
+	                                    <i class="bi bi-star"></i>
+	                                </div>
+	                                <h6 class="product-title">
+	                                    <a href="shop-fw-without-filtres.html">Fine-knit sweater</a>
+	                                </h6>
+	                                <div class="product-price fs-3 fw-500 mb-2">
+		                                <span class="text-primary promotion_price">JP&yen;${ovo.promotion_price }</span>
+		                                <del class="text-muted fs-6">JP&yen;${ovo.price }</del>
+		                            </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                	</c:forEach>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- End Product section -->
     <!-- Count Down -->
     <section class="bg-cover bg-no-repeat" style="background-image: url(assets/img/bg-banner-2.jpg);">
@@ -694,4 +422,4 @@
 <!-- Footer -->
 	<%@include file="./common/footer.jsp" %>
 <!-- END Footer -->
-<script src="${server_url}assets/js/main.js?${js_timer}"></script> 
+<script src="../assets/js/main.js?${js_timer}"></script>

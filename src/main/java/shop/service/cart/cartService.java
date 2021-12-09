@@ -8,15 +8,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import shop.dao.cart.CartDao;
+import shop.dao.shop.ShopProductDao;
 
 @Component
-public class cartService {
+public class CartService {
 	@Autowired
 	private CartDao dao;
+	@Autowired
+	private ShopProductDao productDao;
 	
 	//商品信息
 	public Map<String,Object> getPrdInfo(HashMap map){
-		return dao.getPrdInfo(map);
+		return productDao.getPrdInfo(map);
 	}
 	
 	//加入购物车

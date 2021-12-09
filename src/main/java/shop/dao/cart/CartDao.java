@@ -13,22 +13,6 @@ public class CartDao {
 	@Autowired
 	private JdbcUtil jdbc;
 	
-	public Map<String,Object> getPrdInfo(HashMap map){
-		
-		try {
-			String sql ="\n select goods_id, goods_name"
-					+ "\n			,price ,promotion_price, img_url "
-					+ "\n from sg_goods "
-					+ "\n where goods_id = ?";
-			
-			Object[] obj = new Object[1];
-			obj[0] = map.get("goods_id");
-			return jdbc.queryForMap(sql, obj);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
 	
 	//加入购物车
 	public int insCart(HashMap map){

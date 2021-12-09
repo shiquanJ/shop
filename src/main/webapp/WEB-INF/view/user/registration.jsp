@@ -1,7 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@include file="../common/common.jsp" %>
 <%@include file="../common/header.jsp" %>
-   	
     <!-- Main -->
     <div class="main">
         <!-- 注册页面 -->
@@ -67,4 +65,4 @@
     <!-- End Main -->
     <!-- Footer -->
     <%@include file="../common/footer.jsp" %>
-	<script src="${server_url}assets/js/user/registration.js"></script>
+	<script src="${server_url}assets/js/user/registration.js?${js_timer}"></script>

@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
@@ -56,21 +55,17 @@ public class MainController {
 				HashMap map = new HashMap();
 				map.put("member_id", userInfo.get("member_id"));
 				//获取cart_list
+<<<<<<< Updated upstream
 				List<HashMap> cartList = service.getCartList(map);
 				mv.addObject("cartList", cartList);
+=======
+				List<Map<String,Object>> cartList = service.getCartList(map);
+				mv.addObject("cart_size", cartList.size());
+>>>>>>> Stashed changes
 			}else{
+				mv.addObject("cart_size", "0");
 				session.invalidate();
 			}
-			
-			/*map.put("session_id", session.getId());
-			//check session值
-			int cnt = loginService.chkLoginSession(map);
-			if(cnt > 0){
-				Map<String, Object> userInfo = (Map)session.getAttribute("userInfo");
-				mv.addObject("userInfo", userInfo);
-			}else{
-				session.invalidate();
-			}*/
 		}
 		
 		//获取main页面信息
@@ -80,5 +75,11 @@ public class MainController {
 		
 		return mv;
 		
+	}
+	@RequestMapping(value={"/addrMap"})
+	public ModelAndView addrMap(HttpServletRequest req, HttpServletResponse res){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/common/addrMap");
+		return mv;
 	}
 }

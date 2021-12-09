@@ -1,5 +1,4 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@include file="../common/common.jsp" %>
 <%@include file="../common/header.jsp" %>
    	<!-- END Header -->
     <!-- Main -->
@@ -47,7 +46,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col text-center">
-                                    	<img class="wechatLogo" alt="" src="${server_url}assets/img/wechat.jpg">
+                                    	<img class="wechatLogo" alt="" src="../assets/img/wechat.jpg">
                                     </div>
                                 </div>
                                 <div class="pt-4 text-center">
@@ -65,4 +64,4 @@
     <!-- Footer -->
     <%@include file="../common/footer.jsp" %>
     <!-- End Footer -->
-    <script src="${server_url}assets/js/user/login.js"></script>
+	<script src="../assets/js/user/login.js?${js_timer}"></script>	

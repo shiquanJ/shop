@@ -2,9 +2,10 @@
 var headerfrm;
 $(function(){
 	addEvt();
-	headerfrm = $('input[name="headerfrm"]').val();
+	headerfrm = $('#headForm');
 });
 
+<<<<<<< Updated upstream
 function add_quick_cart(goods_id,member_id){
 	if(!isLogin()){
 		loginPopupMessage('请先登录~');
@@ -31,10 +32,14 @@ function add_quick_cart(goods_id,member_id){
 		}
 	});
 }
+=======
+//绑定事件
+>>>>>>> Stashed changes
 function addEvt(){
 	$('#quick_login').unbind('click').click(function(event){
 		headerfrm.submit();
 	});
+<<<<<<< Updated upstream
 	$('.quick_cart').unbind('click').click(function(event){
 		if(!isLogin()){
 			loginPopupMessage('请先登录~');
@@ -60,3 +65,20 @@ function addEvt(){
 		});
 	});
 }
+=======
+	$('#addrMap').unbind('click').click(function(event){
+		headerfrm.attr("action","/addrMap");
+		headerfrm.submit();
+	});
+}
+function goLogin(){
+	$("#topbarlogin").modal("toggle");
+}
+
+function shop_prd_view(goods_id){
+	var frm = $('#form');
+	$("input[name='goods_id']").val(goods_id);
+	frm.attr("action","/shop/shop_prd_detail");
+	frm.submit();
+}
+>>>>>>> Stashed changes
