@@ -1,5 +1,7 @@
 package shop.controller.cart;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,10 +28,10 @@ public class CartController {
     private CartService service;
     
     
-    // call ajax 
-	@RequestMapping("/addCart_Ajax")
+    // 添加购物车
+	@RequestMapping("/addCart_ajax")
 	@ResponseBody
-	public List<HashMap> addCart_Ajax(HttpServletRequest req, HttpServletResponse res){
+	public String addCart_Ajax(HttpServletRequest req, HttpServletResponse res){
 		
 		String goods_id = req.getParameter("goods_id");
 		String member_id = req.getParameter("member_id");
@@ -45,13 +47,11 @@ public class CartController {
 		//加入购物车
 		int insCart = service.insCart(map);
 		//获取购物车的商品信息
-		List<HashMap> cartList = service.getCartList(map);
+		List<Map<String,Object>> cartList = service.getCartList(map);
 		
-<<<<<<< Updated upstream
+
 		return cartList;
-=======
-		return String.valueOf(cartList.size());
-	}
+
 	// 获取购物车list
 	@RequestMapping("/getCartList_ajax")
 	public ModelAndView getCartList_Ajax(HttpServletRequest req, HttpServletResponse res){
@@ -117,6 +117,7 @@ public class CartController {
 	// 删除购物车
 	@RequestMapping("/delCart_ajax")
 	@ResponseBody
+
 	public HashMap delCart_ajax(HttpServletRequest req, HttpServletResponse res){
 		HashMap resMap = new HashMap();
 		
@@ -132,6 +133,7 @@ public class CartController {
 		//加减商品数量
 		int del = service.updCartDel(map);
 		
+
 		List<Map<String,Object>> cartList = service.getCartList(map);
 		
 		resMap.put("list_cnt", cartList.size());
@@ -141,6 +143,5 @@ public class CartController {
 			resMap.put("status", "fail");
 		}
 		return resMap;
->>>>>>> Stashed changes
 	}
 }

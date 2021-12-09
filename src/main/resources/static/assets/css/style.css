@@ -20238,10 +20238,10 @@ header [data-cart-items]:before {
 	display: inline-block;
     width: 40px;
     height: 40px;
-<<<<<<< Updated upstream
+
+
 }
-=======
-}
+
 .cart_goods_cnt{
 	background: :none;
 	border:none;
@@ -20265,6 +20265,7 @@ header [data-cart-items]:before {
 	text-indent:-99999px;
 	cursor: pointer;
 }
+
 .text_border{
 	max-width:200px;
 	height:100px;
@@ -20293,4 +20294,4 @@ header [data-cart-items]:before {
 	height:300px;
 }
 
->>>>>>> Stashed changes
+

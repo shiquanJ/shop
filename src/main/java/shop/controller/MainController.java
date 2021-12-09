@@ -55,13 +55,14 @@ public class MainController {
 				HashMap map = new HashMap();
 				map.put("member_id", userInfo.get("member_id"));
 				//获取cart_list
-<<<<<<< Updated upstream
+
 				List<HashMap> cartList = service.getCartList(map);
-				mv.addObject("cartList", cartList);
-=======
+
+				List<Map<String,Object>> cartList = service.getCartList(map);
+
 				List<Map<String,Object>> cartList = service.getCartList(map);
 				mv.addObject("cart_size", cartList.size());
->>>>>>> Stashed changes
+
 			}else{
 				mv.addObject("cart_size", "0");
 				session.invalidate();

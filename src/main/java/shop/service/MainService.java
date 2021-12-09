@@ -2,6 +2,7 @@ package shop.service;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -39,7 +40,7 @@ public class MainService {
 		return dao.getPrdList();
 	}
 	
-	public List<HashMap> getCartList(HashMap map){
+	public List<Map<String,Object>> getCartList(HashMap map){
 		
 		return cdao.getCartList(map);
 	}

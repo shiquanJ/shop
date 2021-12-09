@@ -15,15 +15,22 @@ public class MypageService {
 	@Autowired
 	private MypageDao dao;
 	
-	public void getMypageList(ModelAndView mv){
-		//获取main页面信息
-		mv.addObject("getUserinfoList", this.getUserinfoList());
-	}
-	@SuppressWarnings("rawtypes")
-	public List<HashMap> getUserinfoList(){
-		
-		return dao.getUserinfoList();
-	}
+	/*
+	 * public void getMypageList(HashMap map){ //获取main页面信息
+	 * mv.addObject("getUserinfoList", this.getUserinfoList(map)); }
+	 */
 	
+	@SuppressWarnings("rawtypes")
+	public List<HashMap> getUserinfoList(HashMap map){
+		
+		return dao.getUserinfoList(map);
+	}
+
+	@SuppressWarnings("rawtypes")
+	public int updUserinfo(HashMap map){
+		
+		return dao.updUserinfo(map);
+	}
+
 	
 }

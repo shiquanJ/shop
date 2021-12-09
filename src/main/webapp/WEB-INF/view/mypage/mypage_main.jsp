@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     	<%@include file="../include/incCommonJavascript.jsp" %>
+	<script src="${server_url}assets/js/mypage/mypage_main.js"></script>    
 </head>
 <body>
    	<!-- Header -->
@@ -35,7 +35,7 @@
                                 <h4 class="pb-3">
                                     	个人信息
                                 </h4>
-                                <form name="user_info_form">
+                                <form id="user_info_form" name="user_info_form">
                                     <div class="row">
                                         <div class="col-sm-6 mb-3">
                                             <label class="form-label">姓名<span class="text-danger">*</span></label>
