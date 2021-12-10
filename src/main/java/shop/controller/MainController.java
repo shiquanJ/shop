@@ -56,11 +56,8 @@ public class MainController {
 				map.put("member_id", userInfo.get("member_id"));
 				//获取cart_list
 
-				List<HashMap> cartList = service.getCartList(map);
-
 				List<Map<String,Object>> cartList = service.getCartList(map);
 
-				List<Map<String,Object>> cartList = service.getCartList(map);
 				mv.addObject("cart_size", cartList.size());
 
 			}else{

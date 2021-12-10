@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col text-center">
-                                    	<img class="wechatLogo" alt="" src="../assets/img/wechat.jpg">
+                                    	<img class="wechatLogo" alt="" src="${server_url}assets/img/wechat.jpg">
                                     </div>
                                 </div>
                                 <div class="pt-4 text-center">

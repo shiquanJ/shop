@@ -5,7 +5,6 @@
     <head>
         <title>${pagenm}</title>
         <meta charset="utf-8">
-
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- Favicon -->
@@ -41,7 +40,6 @@
 		<script src="../assets/vendor/custom/custom.js"></script>
 		
 		<script src="../assets/js/cart/cart.js?${js_timer}"></script>
-
 	</head>
 </html>
 <body>
@@ -131,17 +129,8 @@
     <!-- Shopping Cart -->
     <div class="modal-dialog px-modal-vertical">
         <div class="modal-content">
-
-            <!-- Header-->
-            <div class="modal-header border-bottom">
-                <h6 class="m-0 fw-bold">商品 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
-                    </h6>
-                <!-- Close -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body" id="quick_cart_list">
             </div>
-
-            <div class="modal-body" id="quick_cart_list"></div>
-
         </div>
     </div>
 </div>
@@ -836,7 +825,7 @@
                 </div>
                 <!-- Cart -->
                 <div class="nav-item quick_cart">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalMiniCart" href="javascript:void(0)">
+                    <a class="nav-link" href="javascript:void(0)">
                         <span class="quick_cart_cnt" data-cart-items="${cart_size}">
                             <i class="bi bi-cart"></i>
                         </span>

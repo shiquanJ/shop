@@ -9,7 +9,7 @@ var Cart ={
 			headerfrm = $('#headForm');
 			$('.quick_cart').unbind('click').click(function(event){
 				if(!isLogin()){
-					loginPopupMessage('请先登录~');
+					confirmPopupMessage('请先登录~','goLogin()');
 					return;
 				}
 				
@@ -25,6 +25,8 @@ var Cart ={
 					dataType: "html",
 					success:function(data){
 						$("#quick_cart_list").html(data);
+						//展开div
+						$("#modalMiniCart").modal("toggle");
 					},
 					fail: function(data){
 						console.log(data);
@@ -61,7 +63,6 @@ function add_quick_cart(goods_id){
 			//右上角购物车小图标count显示
 			$(".quick_cart_cnt").attr("data-cart-items",data);
 			
-			addEvt();
 		},
 		fail: function(data){
 			console.log(data);

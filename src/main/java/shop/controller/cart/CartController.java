@@ -50,8 +50,8 @@ public class CartController {
 		List<Map<String,Object>> cartList = service.getCartList(map);
 		
 
-		return cartList;
-
+		return String.valueOf(cartList.size());
+	}
 	// 获取购物车list
 	@RequestMapping("/getCartList_ajax")
 	public ModelAndView getCartList_Ajax(HttpServletRequest req, HttpServletResponse res){

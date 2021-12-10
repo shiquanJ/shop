@@ -1,13 +1,12 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@include file="../common/common.jsp" %>
-
+<!-- Header-->
 	            <div class="modal-header border-bottom">
 	                <h6 class="m-0 fw-bold">商品 (<span id ="quick_cart_goods_len">${cfn:length(cartList)}</span>)
 	                    </h6>
 	                <!-- Close -->
 	                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	            </div>
-
 <div class="modal-body">
     <!-- List group -->
     <ul class="list-unstyled m-0 p-0">
@@ -31,13 +30,11 @@
 		                    <!--Footer -->
 		                    <div class="d-flex align-items-center">
 		                    	<a href="#" onclick="add_qty('${cvo.cart_id }','${cvo.goods_id}','${s.index}','minus')" >
-
-		                    		<img class="cart_minus" src="../assets/img/minus.jpg">
+		                    		<img class="cart_minus" src="${server_url}assets/img/minus.jpg">
 		                    	</a>&nbsp;
 		                    	<span class="cart_goods_cnt" >${cvo.goods_cnt}</span>&nbsp;
 		                    	<a href="#" onclick="add_qty('${cvo.cart_id }','${cvo.goods_id}','${s.index}','plus')" >
-		                    		<img class="cart_plus" src="../assets/img/plus.jpg">
-
+		                    		<img class="cart_plus" src="${server_url}assets/img/plus.jpg">
 		                    	</a>
 		                        <!-- Remove -->
 		                        <a class="small text-dark ms-auto" href="#!" onclick="removeCart('${cvo.cart_id }','${cvo.goods_id}')">

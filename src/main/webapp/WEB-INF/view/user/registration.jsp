@@ -65,4 +65,4 @@
     <!-- End Main -->
     <!-- Footer -->
     <%@include file="../common/footer.jsp" %>
-	<script src="${server_url}assets/js/user/registration.js?${js_timer}"></script>
+	<script src="../assets/js/user/registration.js?${js_timer}"></script>
