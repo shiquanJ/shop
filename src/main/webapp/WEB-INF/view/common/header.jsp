@@ -1,16 +1,16 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@include file="../common/common.jsp" %>
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>${pagenm}</title>
+<html >
+    <head >
+        <title >${pagenm}</title>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="../assets/img/logo.ico">
 		<!-- Fonts CSS -->
-		<link rel="stylesheet" href="../assets/vendor/fonts/fonts.css?v">
+		<link rel="stylesheet" href="../assets/vendor/fonts/fonts.css">
 		<!-- Bootstrap-icons CSS -->
 		<link rel="stylesheet" href="../assets/vendor/bootstrap/icons/bootstrap-icons.css">
 		<!--Magnific-Popup CSS -->
@@ -22,10 +22,11 @@
 		
 		<script src="../assets/js/common/common.js?${js_timer}"></script> 
 		
+		<script src="../assets/js/common/function.js?${js_timer}"></script> 
+		
 		<!-- jquery -->
 		<script src="../assets/vendor/appear/jquery-3.5.1.min.js"></script>
 		<!-- appear -->
-		<script src="../assets/vendor/appear/jquery.appear.js"></script>
 		<!--bootstrap-->
 		<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<!-- owl-carousel -->
@@ -40,16 +41,19 @@
 		<script src="../assets/vendor/custom/custom.js"></script>
 		
 		<script src="../assets/js/cart/cart.js?${js_timer}"></script>
+		
+		<script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+		
 	</head>
 </html>
 <body>
-<form id="headForm" name="headForm">
+<form id="headForm" name="headForm" >
 <input type="hidden" name="member_id" value="${userInfo.member_id}">
 <input type="hidden" name="member_name" value="${userInfo.member_name}">
 </form>
 <!-- Preload -->
-<div id="loading" class="preloader">
-    <div class="spinner-border text-primary" role="status">
+<div id="loading" class="preloader" >
+    <div class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
     </div>
 </div>

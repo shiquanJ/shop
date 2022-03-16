@@ -5,7 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import net.sf.json.JSONObject;
 /**
  * 
  * @Title: JsonUtils.java
@@ -75,6 +75,13 @@ public class JSONUtils {
 		}
     	
     	return null;
+    }
+    
+    public static String getRes(String data, String param){
+    	JSONObject jsonobject = JSONObject.fromObject(data);
+    	
+    	String res = jsonobject.get(param).toString();
+		return res;
     }
     
 }

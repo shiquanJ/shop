@@ -95,7 +95,7 @@
                                     <img class="img-list" src="${pvo.img_url}" title="" alt="">
                                 </a>
                                 <div class="product-cart-btn">
-                                    <a href="javascript:add_quick_cart('${pvo.goods_id}')" class="btn btn-primary btn-sm w-100">
+                                    <a href="javascript:add_quick_cart('${pvo.goods_id}')" class="btn btn-red btn-sm w-100">
                                         <i class="bi bi-cart"></i>
                                         	添加购物车
                                     </a>
@@ -237,7 +237,7 @@
 	                                        <img class="img-detail-h200" src="${ovo.img_url }" title="" alt="">
 	                                    </a>
 	                                    <div class="product-cart-btn">
-	                                         <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100">
+	                                         <a href="shopping-cart.html" class="btn btn-red btn-sm w-100">
 	                                            <i class="bi bi-cart"></i>
 	                                            	添加购物车
 	                                        </a>
@@ -282,7 +282,7 @@
                         <h6>Hurry up!Limited time offer</h6>
                         <div class="count-down count-down-01 py-4" data-countdown="January 01, 2022 15:00:00"></div>
                         <div>
-                            <a href="shop-list-fw-without-filtres.html" class="btn btn-primary" href="javascript:void(0);">Shop Now</a>
+                            <a href="shop-list-fw-without-filtres.html" class="btn btn-red" href="javascript:void(0);">Shop Now</a>
                         </div>
                     </div>
                 </div>

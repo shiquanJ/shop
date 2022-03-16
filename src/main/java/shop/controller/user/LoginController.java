@@ -13,14 +13,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import net.sf.json.JSONObject;
 import shop.service.MainService;
 import shop.service.user.LoginService;
+import shop.utils.HttpClientUtil;
+import shop.utils.JSONUtils;
 import shop.utils.SessionUtil;
 import shop.utils.View;
 
 @Controller
 @RequestMapping("/user")
 public class LoginController {
+	
+	final String appid="wx757431a4bdc0dc91";
+	final String secret="ec968f26b073f24f9b82bf53a64619d3";
 	
     private View mv;
 	
@@ -162,6 +168,38 @@ public class LoginController {
 		}
 		
 		mv.addObject("pagenm", "注册");
+		return mv;
+		
+	}
+	@RequestMapping("/wxlogin")
+	public ModelAndView wxlogin(HttpServletRequest req ,HttpServletResponse res){
+		
+		mv = new View();
+		
+		String code = req.getParameter("code");
+		
+		System.out.println("code:::"+code);
+		
+		String uri = "https://api.weixin.qq.com/sns/oauth2/access_token?appid="+appid+"&secret="+secret+"&code="+code+"&grant_type=authorization_code";
+		String result = HttpClientUtil.doGet(uri);
+		
+		System.out.println("result:::"+result);
+		
+		JSONObject fromObject = JSONObject.fromObject(result);
+		
+		String token = fromObject.get("access_token").toString();
+		String openid = fromObject.get("openid").toString();
+		
+		System.out.println("token:::"+token);
+		System.out.println("openid:::"+openid);
+		
+		String userInfoUri = "https://api.weixin.qq.com/sns/userinfo?access_token="+token+"&openid="+openid;
+		
+		String result2 = HttpClientUtil.doGet(userInfoUri);
+		
+		JSONObject fromObject2 = JSONObject.fromObject(result2);
+		
+		System.out.println("fromObject2:::"+fromObject2);
 		return mv;
 		
 	}

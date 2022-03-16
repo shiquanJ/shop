@@ -67,3 +67,4 @@ function setPrice(str){
 	
 	return sResult;
 }
+

@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="form-group row align-items-center">
                                         <div class="col">
-                                            <button type="submit" class="btn btn-primary" id="goRegistration">
+                                            <button type="submit" class="btn btn-red" id="goRegistration">
                                                 	立即注册
                                             </button>
                                         </div>

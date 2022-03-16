@@ -175,7 +175,7 @@
                             <div class="product-detail-actions d-flex flex-wrap pt-3">
                                 <div class="cart-qty me-3 mb-3">
                                     <div class="dec qty_btn">-</div>
-                                    <input class="cart_qty_input form-control" type="text" name="qtybutton" value="1" readonly>
+                                    <input class="cart_qty_input form-control" type="text" name="goods_qty" value="1" readonly>
                                     <div class="inc qty_btn">+</div>
                                 </div>
                                 <div class="cart-button mb-3 d-flex">
@@ -298,7 +298,7 @@
                                                     <textarea rows="5" class="form-control"></textarea>
                                                 </div>
                                                 <div class="col-sm-12 pt-2">
-                                                    <button type="button" class="btn btn-primary">Submit Review</button>
+                                                    <button type="button" class="btn btn-red">Submit Review</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -374,7 +374,7 @@
                                         <img class="img-detail-h200" src="${ovo.img_url }" title="" alt="">
                                     </a>
                                     <div class="product-cart-btn">
-                                         <a href="shopping-cart.html" class="btn btn-primary btn-sm w-100" tabindex="0">
+                                         <a href="shopping-cart.html" class="btn btn-red btn-sm w-100" tabindex="0">
                                             <i class="bi bi-cart"></i>
                                             	添加购物车
                                         </a>

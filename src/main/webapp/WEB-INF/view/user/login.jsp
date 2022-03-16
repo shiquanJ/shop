@@ -10,14 +10,11 @@
                     <div class="col-lg-5 col-xxl-4">
                         <div class="card">
                         	<div class="row g-2 card-body">
-                        		<div class="col card-header border-end">
-                        			<h3 class="h5 text-center">扫码登录</h3>
-                        		</div>
-                        		<div class="col card-header">
-                        			<h3 class="h5 text-center">账户登录</h3>
+                        		<div class="col card-header d-none" >
+                        			<p class="text-center m-auto fs-20">手机登录</p>
                         		</div>
                         	</div>
-                            <div class="card-body">
+                            <div class="card-body d-none" id="phlogin">
                                 <form class="" name="reForm" action="/user/login" method="post">
                                     <div class="form-group mb-3">
                                         <input type="text" id="r_email" name="r_email" class="form-control" placeholder="手机号/邮箱">
@@ -25,32 +22,29 @@
                                     <div class="form-group mb-3">
                                         <input type="password" class="form-control" id="r_password" name="r_password" placeholder="密码">
                                     </div>
-                                    <!-- Checkbox -->
-                                    <div class="form-group mb-3 row">
-                                    	<div class="col text-start">
-	                                        <span class="col ms-auto small"><a href="#">短信验证登录</a></span>
-                                    	</div>
-                                    	<div class="col text-end">
-	                                        <span class="col ms-auto small"><a href="#">找回密码</a></span>
-                                    	</div>
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <button type="submit" class="btn btn-primary w-100">
-                                           	 登录
-                                        </button>
-                                    </div>
                                 </form>
-                                <div class="text-center pt-4 pb-5" style="">
-                                    <span class="px-3 bg-white d-inline-block align-top lh-sm">OR</span>
-                                    <div class="border-bottom mt-n3"></div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-red w-100">
+                                       	 登录
+                                    </button>
                                 </div>
-                                <div class="row">
-                                    <div class="col text-center">
-                                    	<img class="wechatLogo" alt="" src="${server_url}assets/img/wechat.jpg">
-                                    </div>
+	                            <div class="text-center pt-4 pb-5">
+	                                <span class="px-3 bg-white d-inline-block align-top lh-sm">OR</span>
+	                                <div class="border-bottom mt-n3"></div>
+	                            </div>
+	                            <div class="form-group text-center">
+	                            	<button type="submit" class="btn btn-red-re w-100" id="goLogin">
+	                                  	立即注册
+	                                </button>
+	                            </div>
+                            </div>
+                            <div class="m-auto" id="wxlogin"></div>
+                            <div class="card-footer">
+                            	<div class="col text-start btn-phone" style="">
+	                            	<span class="col ms-auto small"><a href="#">短信验证登录</a></span>
                                 </div>
-                                <div class="pt-4 text-center">
-                                    <span class="text-muted"><a href="#" id="goLogin">立即注册</a></span>
+                            	<div class="col text-start btn-wechat d-none">
+	                            	<span class="col ms-auto small"><a href="#">微信登录</a></span>
                                 </div>
                             </div>
                         </div>

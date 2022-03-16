@@ -55,4 +55,5 @@ function getPrdDecInfo(goods_id, opt_goods_id){
 			console.log(data);
 		}
 	});
+	
 }

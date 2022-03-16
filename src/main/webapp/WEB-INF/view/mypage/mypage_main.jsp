@@ -76,7 +76,7 @@
                                         <input class="form-check-input" type="radio" name="user_six" id="six_other" value="O">
                                         <label class="form-check-label" for=""six_other"">娚</label>
                                     </div>
-                                    <div class="form-group mt-4"><button type="submit" id="user_info_subm" class="btn btn-primary">保存</button></div>
+                                    <div class="form-group mt-4"><button type="submit" id="user_info_subm" class="btn btn-red">保存</button></div>
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
@@ -98,7 +98,7 @@
                                             <input type="text" class="form-control" placeholder="确认 密码">
                                         </div>
                                     </div>
-                                    <div class="form-group mt-4"><button type="submit" class="btn btn-primary">修改 密码</button></div>
+                                    <div class="form-group mt-4"><button type="submit" class="btn btn-red">修改 密码</button></div>
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
