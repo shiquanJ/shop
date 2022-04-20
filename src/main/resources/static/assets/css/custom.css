@@ -1,0 +1,57 @@
+
+.wechatLogo{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.cart_goods_cnt{
+	background: :none;
+	border:none;
+	text-align:center;
+	line-height:30px;
+	font-size:13px;
+	padding:5px;
+	font-family:"Source Han Sans CN Regular";
+}
+.cart_plus{
+	border:1px solid #ebebeb;
+	width:20px;
+	height:20px;
+	text-indent:-99999px;
+	cursor: pointer;
+}
+.cart_minus{
+	border:1px solid #ebebeb;
+	width:20px;
+	height:20px;
+	text-indent:-99999px;
+	cursor: pointer;
+}
+
+.text_border{
+	max-width:200px;
+	height:100px;
+	font-size:14px;
+	padding:5px 10px 5px 11px;
+	white-space: normal;
+}
+.text_border a:hover {
+    font-weight: 700;
+}
+@media(min-width: 375px) {
+    .text_border{
+		max-width:120px;
+		height:100px;
+		font-size:10px;
+		padding:5px 10px 5px 11px;
+		white-space: normal;
+	}
+	.text_border a:hover {
+	    font-weight: 700;
+	}
+}
+#addrMap{
+	width:400px;
+	height:300px;
+}

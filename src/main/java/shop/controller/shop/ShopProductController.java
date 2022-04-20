@@ -50,7 +50,7 @@ public class ShopProductController {
 			e.printStackTrace();
 		}
 		
-		mv.setViewName("/shop/shop_detail");
+		mv.setViewName("/shop/shop_prd_detail");
 		mv.addObject("pagenm", "商品详细");
 		return mv;
 	}

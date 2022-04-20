@@ -10,7 +10,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="../assets/img/logo.ico">
 		<!-- Fonts CSS -->
-		<link rel="stylesheet" href="../assets/vendor/fonts/fonts.css">
+		<link rel="stylesheet" href="../assets/vendor/fonts/fonts.css?${js_timer}">
 		<!-- Bootstrap-icons CSS -->
 		<link rel="stylesheet" href="../assets/vendor/bootstrap/icons/bootstrap-icons.css">
 		<!--Magnific-Popup CSS -->
@@ -19,6 +19,8 @@
 		<link rel="stylesheet" href="../assets/vendor/slick/slick.css">
 		<!-- Style CSS -->
 		<link rel="stylesheet" href="../assets/css/style.css?${js_timer}">
+		
+		<link rel="stylesheet" href="../assets/css/custom.css?${js_timer}">
 		
 		<script src="../assets/js/common/common.js?${js_timer}"></script> 
 		

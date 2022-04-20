@@ -18,14 +18,14 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4 my-3">
                     <div class="pb-3">
-                        <a href="index.html">
+                        <a href="/main">
                             <img src="assets/img/logo/logo-light.svg" title="" alt="">
                         </a>
                     </div>
                     <address class="white-link mb-4">
                         <p class="text-white-85 mb-2">辽宁省大连市<br/>高新园区</p>
                         <p class="mb-2">
-                            <a class="border-bottom border-secondary" href="mailto:jiangshiquan2020@163.com">jiangshiquan2020@163.com</a>
+                            <a class="border-bottom border-secondary" href="mailto:jiangshiquan2022@hotmail.com">jiangshiquan2022@hotmail.com</a>
                         </p>
                         <p class="mb-2">
                             <a class="border-bottom border-secondary" href="tel:+86 18640844669">tel:+86 186-4084-4669</a>

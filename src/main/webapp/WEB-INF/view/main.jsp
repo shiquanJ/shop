@@ -44,15 +44,11 @@
 		       		<div class="position-relative my-3">
 		       			<div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center my-3">	
 		       				<div class="w-100 text-start">
-				                    <!-- <h6 class="text-uppercase fw-lighten text-white mb-3">NEW IN</h6> -->
-				                <h3 class="fw-lighten h3 text-black">${bvo.banner_nm}</h3>
-				                   <%--  <div class="pt-3">
-				                        <a class="btn btn-white btn-sm" href="shop.html">${bvo.banner_nm}</a>
-				                    </div> --%>
+				                <h3 class="fw-lighten h4 text-black">${bvo.banner_nm}</h3>
 				            </div>
 				        </div>
 				    </div>
-		       		<img class="w-100 h-75 rounded my-5" src="${bvo.img_url}" >
+		       		<img class="w-100 h-75 rounded mt-5" src="${bvo.img_url}" role="button">
 		       		<div class="btn btn-sm" style="cursor: pointer;" onclick="goList('${bvo.catagory_id}')">
 		       			查看更多
 		       		</div>
@@ -63,7 +59,7 @@
     </section>
     <!-- End banner -->
     <!-- 商品列表 -->
-    <section class="section">
+    <section class="section bg-white">
         <div class="container">
             <div class="row justify-content-center section-heading">
                 <div class="col-lg-6 text-center">
