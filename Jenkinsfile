@@ -1,10 +1,14 @@
 pipeline {
-    agent any
-
+    agent {
+        docker {
+            image 'maven:3.8.1-adoptopenjdk-11' 
+            args '-v /root/.m2:/root/.m2' 
+        }
+    }
     stages {
-        stage('git clone') {
+        stage('Build') { 
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jiangshiquan', url: 'https://github.com/shiquanJ/shop.git']]])
+                sh 'mvn -B -DskipTests clean package' 
             }
         }
     }
